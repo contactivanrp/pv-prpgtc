@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Information Section</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet" href="css/_pill.css" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_table_new.less" />
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<style>
+			.map-container {
+				position: relative;
+			}
+
+			.iframe-container {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+				z-index: 10; /* Ensure it's above the iframe */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		</style>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="map-container">
+						<div class="iframe-container">Click to interact</div>
+						<iframe src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="map-container">
+						<div class="iframe-container">Click to interact</div>
+						<iframe src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="map-container">
+						<div class="iframe-container">Click to interact</div>
+						<iframe src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="map-container">
+						<div class="iframe-container">Click to interact</div>
+						<iframe id="interactive-iframe" src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// Select all the .iframe-container elements
+			const overlays = document.querySelectorAll(".iframe-container");
+
+			// Add event listeners to each overlay
+			overlays.forEach((overlay) => {
+				const iframe = overlay.nextElementSibling; // Assuming the iframe directly follows the overlay
+
+				// When the overlay is clicked, hide it to allow interaction with the iframe
+				overlay.addEventListener("click", function () {
+					this.style.display = "none";
+				});
+
+				// When the mouse leaves the iframe, show the overlay again
+				iframe.addEventListener("mouseleave", function () {
+					overlay.style.display = "flex"; // Make sure to match the display style used in your CSS
+				});
+			});
+		</script>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

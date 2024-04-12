@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body class="p-contact-us">
+		<nav>
+			<div id="navbar_container">
+				<div class="container">
+					<div class="navbar-buttons">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html"><img src="im/logo.png" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav ms-auto">
+									<li id="nav-home" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+									<li id="nav-our-people" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="what_we_do.html" id="nav-what-we-do">What We Do</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="where_we_are.html" id="nav-where-we-are">Where We Are</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_members_of_parliament.html" id="nav-our-members-of-parliament">Our Members Of Parliament</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_town_councillors_and_officers.html" id="nav-our-town-councillors-and-officers">Our Town Councillors &amp; Officers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_functions.html" id="nav-our-functions">Our Functions</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-services" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="service_and_conservancy.html" id="nav-service-and-conservancy">Service &amp; Conservancy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="bulky_refuse_removal.html" id="nav-bulky-refuse-removal">Bulky Refuse Removal</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="facility_booking.html" id="nav-facility-booking">Facility Booking</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="handyman_services.html" id="nav-handyman-services">Handyman Services</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="light_bulb.html" id="nav-light-bulb">Light Bulb <span class="badge rounded-pill standard_pill">New</span></a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-briefcase.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="temporary_occupation_license.html" id="nav-temporary-occupation-license">Temporary Occupation License</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-news" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="news_and_events.html" id="nav-news-and-events">News &amp; Events</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="newsletter.html" id="nav-newsletter">Newsletter</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="publications.html" id="nav-publications">Publications</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="https://www.emservices.com.sg/tenders" target="_blank" id="nav-tender-results">Tender Results</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-policies" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="whistle_blowing.html" id="nav-whistle-blowing">Whistle-Blowing</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="personal_data_protection_policy.html" id="nav-personal-data-protection-policy">Personal Data Protection Policy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-forms" class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+									<li id="nav-contact-us" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_locations.html" id="nav-our-locations">Our Locations</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="careers.html" id="nav-careers">Careers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- navbar-collapse.// -->
+						</div>
+						<!-- container-fluid.// -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="section-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-5">
+						<h1 class="variant">Our Locations</h1>
+					</div>
+					<div class="col-12 col-md-7 image-row">
+						<div class="mask-small" style="background-image: url('im/bg-top-view-mrt.png'); background-position: 50% 55%"></div>
+						<div class="mask-large" style="background-image: url('im/bg-waterwaypoint-bridge.png'); background-position: 50% 55%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-header" style="margin-top: 6.4rem; margin-bottom: 6.4rem">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="hero_text">
+							<div class="hero-top">
+								<div class="hero-top-hdr">
+									<h6 class="none">
+										<pre>// Sub Header</pre>
+									</h6>
+									<!--<h1>Our locations</h1>-->
+								</div>
+
+								<div class="hero-top-desc">
+									<h2 class="text-center">Pasir Ris-Punggol Town Council<br /> operates at two offices:</h2>
+								</div>
+							</div>
+
+							<div class="hero-bottom none">
+								<pre>// Other Elements</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="c-card-location" style="margin-bottom: 9.6rem">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="left">
+							<div class="card-content">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								<h5>Pasir Ris Office</h5>
+
+								<div class="g-para-group">
+									<p>
+										Mon-Fri 8am to 5pm.<br />
+										Sat 8am to 12:30 pm.
+									</p>
+									<p>Closed on Sundays and Public Holidays</p>
+								</div>
+
+								<div class="location">
+									Blk 577 Pasir Ris, Street 53 #01-88<br />
+									Singapore 510577
+								</div>
+							</div>
+
+							<div class="map-container">
+								<div class="iframe-container"></div>
+								<iframe id="interactive-iframe" src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6">
+						<div class="right">
+							<div class="card-content">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								<h5>Punggol Office</h5>
+
+								<div class="g-para-group">
+									<p>
+										Mon-Fri 8am to 5pm.<br />
+										Sat 8am to 12:30 pm.
+									</p>
+									<p>Closed on Sundays and Public Holidays</p>
+								</div>
+
+								<div class="location">Blk 603 Punggol Road #01-01<br />Singapore 820603</div>
+							</div>
+
+							<div class="map-container">
+								<div class="iframe-container"></div>
+								<iframe id="interactive-iframe" src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section style="margin-top: 9.6rem; margin-bottom: 9.6rem">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="para-text">
+							<h2>Payment Related Transactions</h2>
+							<div class="g-para-group">
+								<p>Mon-Fri 8am to 4:30pm.<br />Sat 8am to 12:30 pm.</p>
+								<p>For urgent services after office hours (e.g. lift breakdown and other essential services provided by our Town Council), you may contact our Essential Maintenance Services Unit at 1800 325 8888.</p>
+								<p>To contact our General Manager, please email to <a href="mailto:tc_gm@prpg-tc.org.sg">tc_gm@prpg-tc.org.sg</a>.</p>
+								<p>To contact our Town Council Chairman, please email to <a href="mailto:tc_chairman@prpg-tc.org.sg">tc_chairman@prpg-tc.org.sg</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="line-block none"></div>
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 social-group">
+							<div class="icon-left">
+								<a href="https://www.facebook.com/prpg.tc" target="_blank"><img src="im/icon-facebook.svg" alt="" /></a>
+							</div>
+							<div class="text-right">
+								<h5>Contact Us</h5>
+								<p>Stay informed about town council news and never miss a community update again.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fat-footer">
+				<div class="container">
+					<div class="row top">
+						<div class="col-12 col-md-2 footer-left">
+							<img src="im/logo.png" alt="" />
+						</div>
+						<div class="col-12 col-md-10 column">
+							<div class="left">
+								<div class="group-hdr">Resources</div>
+								<div class="group">
+									<a href="#">Newsletter</a>
+									<a href="#">Annual Report</a>
+									<a href="#">Maintenance / Block Washing</a>
+									<a href="#">Forms</a>
+								</div>
+							</div>
+							<div class="right">
+								<div class="group-hdr">Legal</div>
+								<div class="group">
+									<a href="#">Whistle-Blowing Policy</a>
+									<a href="#">Personal Data Protection Policy</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bottom">
+						<div class="col-12 line"></div>
+						<div class="col-12 col-md-8">© <span id="copyright-year"></span> Pasir Ris - Punggol Town Council. All rights reserved.</div>
+						<div class="col-12 col-md-4 icon">
+							<a href="https://www.facebook.com">
+								<img src="im/icon-social-facebook.svg" alt="" />
+							</a>
+							<a href="https://www.instagram.com">
+								<img src="im/icon-social-instagram.svg" alt="" />
+							</a>
+							<a href="https://www.tiktok.com">
+								<img src="im/icon-social-tiktok.svg" alt="" />
+							</a>
+							<a href="https://www.youtube.com">
+								<img src="im/icon-social-youtube.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+			// highlight current nav
+			document.getElementById("nav-contact-us").classList.add("active");
+			document.getElementById("nav-our-locations").classList.add("active");
+		</script>
+		<script>
+			// Select all instances of the map container and the iframe
+			const containers = document.querySelectorAll(".iframe-container");
+			const iframes = document.querySelectorAll("#interactive-iframe");
+
+			// A function to activate the iframe by hiding the overlay
+			function activateIframe(event) {
+				const container = event.currentTarget;
+				container.style.display = "none";
+				const iframe = container.nextElementSibling;
+				if (iframe) {
+					iframe.style.pointerEvents = "auto"; // Ensure iframe is clickable
+				}
+			}
+
+			// A function to deactivate the iframe by showing the overlay
+			function deactivateIframe(event) {
+				const iframe = event.currentTarget;
+				const container = iframe.previousElementSibling;
+				if (container && container.classList.contains("iframe-container")) {
+					container.style.display = "block";
+					iframe.style.pointerEvents = "none"; // Make iframe not clickable
+				}
+			}
+
+			// Loop through each container, add event listeners to each
+			containers.forEach((container) => {
+				container.addEventListener("mousemove", activateIframe);
+				container.addEventListener("mousedown", activateIframe);
+			});
+
+			// Loop through each iframe, add an event listener to each
+			iframes.forEach((iframe) => {
+				iframe.addEventListener("mouseout", deactivateIframe);
+				iframe.style.pointerEvents = "none"; // Start with iframes not clickable
+			});
+		</script>
+	</body>
+
+</html>

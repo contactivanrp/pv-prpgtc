@@ -1,0 +1,129 @@
+@import "custom.less";
+
+.section-accordion {
+    background-color: @color-green-06;
+
+    padding-top: 6.4rem;
+    padding-bottom: 10rem;
+
+    display: grid;
+    gap: 4.8rem;
+
+    h2 {
+        color: @color-gray-05;
+        text-align: center;
+    }
+}
+
+.accordion {
+    background-color: @color-green-06;
+    display: grid;
+    gap: 2.4rem;
+
+    @media (max-width: calc(@sm - 1px)) {
+        padding: 0 !important;
+    }
+
+    &:hover {
+        background-color: @color-green-06;
+    }
+
+    .accordion-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        border-radius: 1rem;
+        overflow: hidden;
+        
+        .accordion-button.collapsed::after,
+        .accordion-button:not(.collapsed)::after {
+            background: url("../im/icon-accordion.svg");
+            width: 4rem;
+            height: 4rem;
+            background-size: 4rem 4rem !important;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background: url("../im/icon-accordion-active.svg");
+        }
+
+        .accordion-header {
+            padding: 2rem 3rem;
+
+            @media (min-width: @md) {
+                padding: 4rem 5rem;
+            }
+
+            h2 {
+                color: @color-gray-16;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 133.2%;
+            }
+
+            button {
+                outline: none;
+                box-shadow: none;
+                border: none;
+                background: none;
+                padding: 0;
+            }
+        }
+
+        .accordion-body {
+            color: @color-gray-16;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 133.2%;
+            padding: 0;
+
+            margin: 0rem 3rem 2rem;
+            
+            @media (min-width: @md) {
+                margin: 0rem 5rem 4rem;
+            }
+
+            max-width: 1030px; // to resolve max width
+
+            display: grid;
+            gap: 3.6rem; // origin 4.8rem
+
+            p,
+            li {
+                color: @color-gray-13;
+
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: normal;
+                line-height: 150%;
+
+                &.highlighted {
+                    font-weight: 600;
+                    color: @color-gray-19;
+                }
+            }
+
+            li {
+                padding-left: 0.4rem;
+            }
+
+            ul {
+                margin-bottom: 0;
+                padding-left: 2.4rem;
+            }
+        }
+
+        .accordion-para {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 1.6rem;
+
+            overflow: auto;
+        }
+    }
+}

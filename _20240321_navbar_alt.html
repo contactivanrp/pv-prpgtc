@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>navbar with boostrap</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+	<body>
+		<nav class="navbar_alt">
+			<div class="container">
+				<div class="row">
+					<div class="col-2 col-md-2 left">
+						<img src="im/logo.png" alt="" />
+					</div>
+					<div class="col-10 col-md-10 right">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="button-container">
+								<div class="button"><p>Home</p></div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Our Community</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container" onmouseover="dropdown('our-services')" onmouseleave="dropdownleave('our-services')">
+								<div class="button">
+									<p>Our Services</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Our News</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Schedules</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Forms</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Contact Us</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<dropdown>
+				<div class="container">
+					<div id="our-services" class="row dropdown" onmouseleave="dropdownleave('our-services')">
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-refresh-ccw.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Service & Conservancy</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-log-out.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Bulky Refuse Removal</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-clipboard.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Facility Booking</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-users.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Handyman Services</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-sun.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Light Bulb</p>
+									<div class="badge">
+										<p>New</p>
+									</div>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-briefcase.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Temporary Occupation License</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dropdown>
+		</nav>
+
+		<nav class="navbar_alt">
+			<button class="accordion-similar">Home</button>
+
+			<button class="accordion">Our Community</button>
+			<div class="panel">
+				<div class="container">
+					<div id="our-services" class="row dropdown" onmouseleave="dropdownleave('our-services')">
+						<div class="col-12 button">
+							<img src="im/icon-refresh-ccw.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Service & Conservancy</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 button">
+							<img src="im/icon-log-out.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Bulky Refuse Removal</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 button">
+							<img src="im/icon-clipboard.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Facility Booking</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 button">
+							<img src="im/icon-users.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Handyman Services</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 button">
+							<img src="im/icon-sun.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Light Bulb</p>
+									<div class="badge">
+										<p>New</p>
+									</div>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 button">
+							<img src="im/icon-briefcase.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Temporary Occupation License</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="accordion">Our Services</button>
+			<div class="panel">
+				<p>Lorem ipsum...</p>
+			</div>
+
+			<button class="accordion">Our News</button>
+			<div class="panel">
+				<p>Lorem ipsum...</p>
+			</div>
+
+			<button class="accordion">Schedules</button>
+			<div class="panel">
+				<p>Lorem ipsum...</p>
+			</div>
+
+			<button class="accordion">Forms</button>
+			<div class="panel">
+				<p>Lorem ipsum...</p>
+			</div>
+
+			<button class="accordion">Contact Us</button>
+			<div class="panel">
+				<p>Lorem ipsum...</p>
+			</div>
+		</nav>
+
+		<nav class="navbar_alt">
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Accordion Item #1</button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Accordion Item #2</button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Accordion Item #3</button>
+					</h2>
+					<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
+
+<!--
+	<body>
+		<nav class="navbar_alt">
+			<div class="container">
+				<div class="row">
+					<div class="col-2 col-md-2 left">
+						<img src="im/logo.png" alt="" />
+					</div>
+					<div class="col-10 col-md-10 right">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="button-container">
+								<div class="button"><p>Home</p></div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Our Community</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container" onmouseover="dropdown('our-services')" onmouseleave="dropdownleave('our-services')">
+								<div class="button">
+									<p>Our Services</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Our News</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Schedules</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Forms</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+							<div class="button-container">
+								<div class="button">
+									<p>Contact Us</p>
+									<img src="im/icon-chevron-down.svg" alt="" />
+								</div>
+								<div class="highlight none"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<dropdown>
+				<div class="container">
+					<div id="our-services" class="row dropdown" onmouseleave="dropdownleave('our-services')">
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-refresh-ccw.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Service & Conservancy</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-log-out.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Bulky Refuse Removal</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-clipboard.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Facility Booking</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-users.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Handyman Services</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-sun.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Light Bulb</p>
+									<div class="badge">
+										<p>New</p>
+									</div>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 button">
+							<img src="im/icon-briefcase.svg" alt="" />
+							<div>
+								<div class="header-group">
+									<p class="header">Temporary Occupation License</p>
+								</div>
+								<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dropdown>
+		</nav>
+
+		<button class="accordion">Home</button>
+
+		<button class="accordion">Our Community</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Our Services</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Our News</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Schedules</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Forms</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Contact Us</button>
+		<div class="panel">
+			<p>Lorem ipsum...</p>
+		</div>
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+-->

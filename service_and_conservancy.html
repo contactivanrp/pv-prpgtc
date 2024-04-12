@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Service &amp; Conservancy</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet" href="css/_pill.css" type="text/css" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_accordion.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body class="p-service-and-conservancy">
+		<nav>
+			<div id="navbar_container">
+				<div class="container">
+					<div class="navbar-buttons">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html"><img src="im/logo.png" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav ms-auto">
+									<li id="nav-home" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+									<li id="nav-our-people" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="what_we_do.html" id="nav-what-we-do">What We Do</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="where_we_are.html" id="nav-where-we-are">Where We Are</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_members_of_parliament.html" id="nav-our-members-of-parliament">Our Members Of Parliament</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_town_councillors_and_officers.html" id="nav-our-town-councillors-and-officers">Our Town Councillors &amp; Officers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_functions.html" id="nav-our-functions">Our Functions</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-services" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="service_and_conservancy.html" id="nav-service-and-conservancy">Service &amp; Conservancy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="bulky_refuse_removal.html" id="nav-bulky-refuse-removal">Bulky Refuse Removal</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="facility_booking.html" id="nav-facility-booking">Facility Booking</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="handyman_services.html" id="nav-handyman-services">Handyman Services</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="light_bulb.html" id="nav-light-bulb">Light Bulb <span class="badge rounded-pill standard_pill">New</span></a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-briefcase.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="temporary_occupation_license.html" id="nav-temporary-occupation-license">Temporary Occupation License</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-news" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="news_and_events.html" id="nav-news-and-events">News &amp; Events</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="newsletter.html" id="nav-newsletter">Newsletter</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="publications.html" id="nav-publications">Publications</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="https://www.emservices.com.sg/tenders" target="_blank" id="nav-tender-results">Tender Results</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-policies" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="whistle_blowing.html" id="nav-whistle-blowing">Whistle-Blowing</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="personal_data_protection_policy.html" id="nav-personal-data-protection-policy">Personal Data Protection Policy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-forms" class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+									<li id="nav-contact-us" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_locations.html" id="nav-our-locations">Our Locations</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="careers.html" id="nav-careers">Careers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- navbar-collapse.// -->
+						</div>
+						<!-- container-fluid.// -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="section-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<h1 class="variant">Service &amp; Conservancy (S&amp;CC)</h1>
+					</div>
+					<div class="col-12 col-md-8 image-row">
+						<div class="mask-small" style="background-image: url('im/bg-top-view-mrt.png'); background-position: 50% 55%"></div>
+						<div class="mask-large" style="background-image: url('im/bg-waterwaypoint-bridge.png'); background-position: 50% 55%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-accordion">
+			<h2>Charges</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion" id="accordion">
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<h4>Residential Properties</h4>
+									</button>
+								</div>
+								<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="accordion-para">
+											<p>S&CC is due on the first day of every month and payable without demand from the Town Council. We give our residents a one-month grace period to pay their S&CC. This means that if payment is made within the month, late payment penalty fee will not be imposed.</p>
+											<p>Your S&CC is meant for the maintenance and upkeep of the common property within Pasir Ris - Punggol GRC and Punggol West SMC.</p>
+											<ul>
+												<li>Provision of essential maintenance and repairs of lifts, water pumps, switchrooms, lightings and lift rescue services</li>
+												<li>Conservancy and cleaning works</li>
+												<li>Landscaping and horticultural works</li>
+												<li>Preventive and cyclical maintenance works including repainting and re-roofing</li>
+												<li>Replacement of water pipes and automatic refuse chute-flushing systems</li>
+											</ul>
+										</div>
+
+										<div class="accordion-para">
+											<h5>Reduced S&CC Payable</h5>
+											<p>Reduced Rates are applicable to citizen household, without private property or HDB industrial/commercial property.</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table-styled table align-middle table-bordered">
+												<thead>
+													<tr class="align-middle">
+														<th scope="col">Property Type</th>
+														<th scope="col">
+															Reduced Rates<br />
+															(With Effect From 1 July 2023)
+														</th>
+														<th scope="col">
+															Normal Rates<br />
+															(With Effect From 1 July 2024)
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1-Room</td>
+														<td>$21.40</td>
+														<td>$22.50</td>
+													</tr>
+													<tr>
+														<td scope="row">2-Room</td>
+														<td>$31.50</td>
+														<td>$33.50</td>
+													</tr>
+													<tr>
+														<td scope="row">3-Room</td>
+														<td>$46.50</td>
+														<td>$49.80</td>
+													</tr>
+													<tr>
+														<td scope="row">3-Room (D&B/DBSS)</td>
+														<td>$50.50</td>
+														<td>$53.70</td>
+													</tr>
+													<tr>
+														<td scope="row">4-Room</td>
+														<td>$65.50</td>
+														<td>$69.40</td>
+													</tr>
+													<tr>
+														<td scope="row">4-Room (D&B/DBSS)</td>
+														<td>$71.50</td>
+														<td>$76.10</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room</td>
+														<td>$83.00</td>
+														<td>$88.90</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room (D&B/DBSS)</td>
+														<td>$89.00</td>
+														<td>$95.00</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room (3-generation) flat</td>
+														<td>$86.00</td>
+														<td>$92.30</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="accordion-para">
+											<p>D&B - D&B refers to all non-standard flats including Design & Build, Design Plus and Premium Flats. Since 1Q 2000, HDB had decided to merge Design & Build and Design Plus flats into one category known as Premium Apartments. S&CC(D&B) is a decision taken by the Council after taking into consideration of the special designs, facade treatment, landscaping etc, which require higher replacement cost.</p>
+										</div>
+
+										<div class="accordion-para">
+											<h5>Normal S&CC Payable</h5>
+											<p>Normal Rates are applicable to household</p>
+											<ul>
+												<li>Where none of the owners or tenants and none of the authorised occupiers are citizens of Singapore;</li>
+												<li>Where any owner or tenant or authorised occupier has an interest in any private residential property, or in any industrial or commercial property, whether or not owned by or vested in HDB</li>
+												<li>Which is owned by or let to any body corporate; or</li>
+												<li>Which is vacant.</li>
+											</ul>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table-styled table align-middle table-bordered">
+												<thead>
+													<tr class="align-middle">
+														<th scope="col">Property Type</th>
+														<th scope="col">
+															Reduced Rates<br />
+															(With Effect From 1 July 2023)
+														</th>
+														<th scope="col">
+															Normal Rates<br />
+															(With Effect From 1 July 2024)
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">1-Room</td>
+														<td>$58.00</td>
+														<td>$61.00</td>
+													</tr>
+													<tr>
+														<td scope="row">2-Room</td>
+														<td>$63.00</td>
+														<td>$66.50</td>
+													</tr>
+													<tr>
+														<td scope="row">3-Room</td>
+														<td>$73.50</td>
+														<td>$78.40</td>
+													</tr>
+													<tr>
+														<td scope="row">3-Room (D&B/DBSS)</td>
+														<td>$77.50</td>
+														<td>$82.00</td>
+													</tr>
+													<tr>
+														<td scope="row">4-Room</td>
+														<td>$84.50</td>
+														<td>$89.50</td>
+													</tr>
+													<tr>
+														<td scope="row">4-Room (D&B/DBSS)</td>
+														<td>$87.50</td>
+														<td>$92.50</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room</td>
+														<td>$94.50</td>
+														<td>$101.40</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room (D&B/DBSS)</td>
+														<td>$99.00</td>
+														<td>$106.50</td>
+													</tr>
+													<tr>
+														<td scope="row">5-Room (3-generation) flat</td>
+														<td>$97.00</td>
+														<td>$104.30</td>
+													</tr>
+													<tr>
+														<td scope="row">Executive</td>
+														<td>$105.00</td>
+														<td>$112.80</td>
+													</tr>
+													<tr>
+														<td scope="row">Executive (D&B)</td>
+														<td>$111.00</td>
+														<td>$119.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="accordion-para">
+											<p class="highlighted">
+												Penalties for Late Payment of S&CC of Residential Properties.<br />
+												2% will be imposed on outstanding amount.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<h4>Commercial Properties</h4>
+									</button>
+								</div>
+								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="accordion-para">
+											<p class="p-margin-bottom">S&CC is due on the first day of every month and payable without demand from the Town Council. We give our residents a one-month grace period to pay their S&CC. This means that if payment is made within the month, late payment penalty fee will not be imposed.</p>
+											<p class="p-margin-bottom">Your S&CC is meant for the maintenance and upkeep of the common property within Pasir Ris - Punggol GRC and Punggol West SMC.</p>
+											<ul>
+												<li>Provision of essential maintenance and repairs of lifts, water pumps, switchrooms, lightings and lift rescue services</li>
+												<li>Conservancy and cleaning works</li>
+												<li>Landscaping and horticultural works</li>
+												<li>Preventive and cyclical maintenance works including repainting and re-roofing</li>
+												<li>Replacement of water pipes and automatic refuse chute-flushing systems</li>
+											</ul>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table-styled table align-middle table-bordered">
+												<thead>
+													<tr class="align-middle">
+														<th scope="col">Property Type</th>
+														<th scope="col">S&CC Payable<br />(With Effect From 1 July 2023)</th>
+														<th scope="col">S&CC Payable<br />(With Effect From 1 July 2024)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">Commercial Properties Shop with Living accommodation</td>
+														<td>$2.30/sqm subject to a minimum of $78, in addition to the reduced rate of conservancy and service charges for the equivalent room types for residential (except for Executive Apartment)</td>
+														<td>$2.50/sqm subject to a minimum of $84, in addition to the reduced rate of conservancy and service charges for the equivalent room types for residential (except for Executive Apartment)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="accordion-para">
+											<p class="highlighted">
+												Penalties for Late Payment of S&CC of Commercial Properties and Temporary Occupation Licences.<br />
+												S$30 or 5% of outstanding S&CC per month, whichever is higher.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<h4>S&CC Payments</h4>
+									</button>
+								</div>
+								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="accordion-para">
+											<h5>Collection Hours:</h5>
+											<p class="highlighted">
+												8.00am to 4.30pm from Mondays to Fridays<br />
+												8.00am - 12.30pm on Saturdays<br />
+												Closed on Sundays and Public Holidays
+											</p>
+
+											<p>S&CC is due on the first day of every month and payable without demand from the Town Council. We give our residents a one-month grace period to pay their S&CC. This means that if payment is made within the month, late payment penalty fee will not be imposed.</p>
+											<p>Your S&CC is meant for the maintenance and upkeep of the common property within Pasir Ris - Punggol GRC and Punggol West SMC.</p>
+											<ul>
+												<li>Provision of essential maintenance and repairs of lifts, water pumps, switchrooms, lightings and lift rescue services</li>
+												<li>Conservancy and cleaning works</li>
+												<li>Landscaping and horticultural works</li>
+												<li>Preventive and cyclical maintenance works including repainting and re-roofing</li>
+												<li>Replacement of water pipes and automatic refuse chute-flushing systems</li>
+											</ul>
+										</div>
+
+										<div class="accordion-para">
+											<h5>Payment Mode</h5>
+											<ul>
+												<li><a href="https://www.prpg-tc.org.sg/#cash">Cash, NETS & Credit Cards*</a></li>
+												<li><a href="https://www.prpg-tc.org.sg/#giro">GIRO</a></li>
+												<li><a href="https://www.prpg-tc.org.sg/#internet">Internet Banking</a></li>
+												<li><a href="https://www.prpg-tc.org.sg/#sam">S.A.M or A.X.S</a></li>
+											</ul>
+										</div>
+
+										<div class="accordion-para">
+											<h5>Internet Banking</h5>
+											<p>Residents can make S&CC payments through Internet Banking with the following banks.</p>
+											<div class="table-responsive">
+												<table class="table-styled table align-middle table-bordered max-width-none">
+													<thead>
+														<tr class="align-middle">
+															<th scope="col" colspan="3">Kindly contact them directly for technical assistance</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td scope="row">DBS</td>
+															<td>www.dbs.com.sg</td>
+															<td>1800-111-1111</td>
+														</tr>
+														<tr>
+															<td scope="row">OCBC</td>
+															<td>www.ocbc.com.sg</td>
+															<td>1800-363-3333</td>
+														</tr>
+														<tr>
+															<td scope="row">UOB</td>
+															<td>www.uob.com.sg</td>
+															<td>1800-222-2121</td>
+														</tr>
+														<tr>
+															<td scope="row">Standard Chartered</td>
+															<td>www.standardcharted.com.sg</td>
+															<td>1800-747-7000</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="accordion-para">
+											<h5>Cash, NETS & Credit Cards*</h5>
+											<p>We accept VISA and MASTERCARD of all major banks only.</p>
+											<p>For cash, NETS or Credit Card payment, please visit us at:</p>
+
+											<div class="table-group-row">
+												<div class="details_callout_table">
+													<div class="table-content table-responsive">
+														<h5>Pasir Ris Office</h5>
+														<table class="table table-borderless">
+															<tbody>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																				<path d="M5.625 13.75V7.5H9.375V13.75M1.875 5.625L7.5 1.25L13.125 5.625V12.5C13.125 12.8315 12.9933 13.1495 12.7589 13.3839C12.5245 13.6183 12.2065 13.75 11.875 13.75H3.125C2.79348 13.75 2.47554 13.6183 2.24112 13.3839C2.0067 13.1495 1.875 12.8315 1.875 12.5V5.625Z" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																			</svg>
+
+																			Address
+																		</th-content>
+																	</th>
+																	<td colspan="2">
+																		Blk 577 Pasir Ris Street 53 #01-88<br />
+																		Singapore 510577
+																	</td>
+																</tr>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																				<g clip-path="url(#clip0_44_21750)">
+																					<path d="M13.7504 10.5751V12.4501C13.7511 12.6241 13.7154 12.7964 13.6457 12.9559C13.576 13.1154 13.4737 13.2586 13.3454 13.3762C13.2172 13.4939 13.0657 13.5835 12.9009 13.6393C12.736 13.695 12.5612 13.7157 12.3879 13.7001C10.4647 13.4911 8.61726 12.8339 6.99414 11.7813C5.48403 10.8217 4.20372 9.54142 3.24414 8.03131C2.18787 6.40081 1.53054 4.54443 1.32539 2.61256C1.30977 2.43973 1.33031 2.26554 1.3857 2.10108C1.44109 1.93662 1.53012 1.78549 1.64711 1.65732C1.76411 1.52916 1.90651 1.42675 2.06525 1.35664C2.224 1.28652 2.3956 1.25022 2.56914 1.25006H4.44414C4.74745 1.24708 5.04151 1.35448 5.27149 1.55227C5.50147 1.75005 5.65168 2.02471 5.69414 2.32506C5.77327 2.9251 5.92004 3.51426 6.13164 4.08131C6.21573 4.30501 6.23392 4.54813 6.18408 4.78186C6.13423 5.01559 6.01842 5.23013 5.85039 5.40006L5.05664 6.19381C5.94636 7.75853 7.24192 9.05409 8.80664 9.94381L9.60039 9.15006C9.77032 8.98202 9.98486 8.86622 10.2186 8.81637C10.4523 8.76652 10.6954 8.78472 10.9191 8.86881C11.4862 9.0804 12.0753 9.22717 12.6754 9.30631C12.979 9.34914 13.2563 9.50206 13.4545 9.73599C13.6527 9.96992 13.758 10.2685 13.7504 10.5751Z" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																				</g>
+																				<defs>
+																					<clipPath id="clip0_44_21750">
+																						<rect width="15" height="15" fill="white" style="fill: white; fill-opacity: 1" />
+																					</clipPath>
+																				</defs>
+																			</svg>
+
+																			Phone Number
+																		</th-content>
+																	</th>
+																	<td colspan="2">6590 9320 (Tel)<br />6585 4937 (Fax)</td>
+																</tr>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+																				<path d="M13.75 3.75C13.75 3.0625 13.1875 2.5 12.5 2.5H2.5C1.8125 2.5 1.25 3.0625 1.25 3.75M13.75 3.75V11.25C13.75 11.9375 13.1875 12.5 12.5 12.5H2.5C1.8125 12.5 1.25 11.9375 1.25 11.25V3.75M13.75 3.75L7.5 8.125L1.25 3.75" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																			</svg>
+																			Email
+																		</th-content>
+																	</th>
+																	<td colspan="2">pasirris@prpg-tc.org.sg</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
+												<div class="details_callout_table">
+													<div class="table-content table-responsive">
+														<h5>Punggol Office</h5>
+														<table class="table table-borderless">
+															<tbody>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																				<path d="M5.625 13.75V7.5H9.375V13.75M1.875 5.625L7.5 1.25L13.125 5.625V12.5C13.125 12.8315 12.9933 13.1495 12.7589 13.3839C12.5245 13.6183 12.2065 13.75 11.875 13.75H3.125C2.79348 13.75 2.47554 13.6183 2.24112 13.3839C2.0067 13.1495 1.875 12.8315 1.875 12.5V5.625Z" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																			</svg>
+
+																			Address
+																		</th-content>
+																	</th>
+																	<td colspan="2">
+																		Blk 603 Punggol Road #01-01<br />
+																		Singapore 820603
+																	</td>
+																</tr>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																				<g clip-path="url(#clip0_44_21750)">
+																					<path d="M13.7504 10.5751V12.4501C13.7511 12.6241 13.7154 12.7964 13.6457 12.9559C13.576 13.1154 13.4737 13.2586 13.3454 13.3762C13.2172 13.4939 13.0657 13.5835 12.9009 13.6393C12.736 13.695 12.5612 13.7157 12.3879 13.7001C10.4647 13.4911 8.61726 12.8339 6.99414 11.7813C5.48403 10.8217 4.20372 9.54142 3.24414 8.03131C2.18787 6.40081 1.53054 4.54443 1.32539 2.61256C1.30977 2.43973 1.33031 2.26554 1.3857 2.10108C1.44109 1.93662 1.53012 1.78549 1.64711 1.65732C1.76411 1.52916 1.90651 1.42675 2.06525 1.35664C2.224 1.28652 2.3956 1.25022 2.56914 1.25006H4.44414C4.74745 1.24708 5.04151 1.35448 5.27149 1.55227C5.50147 1.75005 5.65168 2.02471 5.69414 2.32506C5.77327 2.9251 5.92004 3.51426 6.13164 4.08131C6.21573 4.30501 6.23392 4.54813 6.18408 4.78186C6.13423 5.01559 6.01842 5.23013 5.85039 5.40006L5.05664 6.19381C5.94636 7.75853 7.24192 9.05409 8.80664 9.94381L9.60039 9.15006C9.77032 8.98202 9.98486 8.86622 10.2186 8.81637C10.4523 8.76652 10.6954 8.78472 10.9191 8.86881C11.4862 9.0804 12.0753 9.22717 12.6754 9.30631C12.979 9.34914 13.2563 9.50206 13.4545 9.73599C13.6527 9.96992 13.758 10.2685 13.7504 10.5751Z" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																				</g>
+																				<defs>
+																					<clipPath id="clip0_44_21750">
+																						<rect width="15" height="15" fill="white" style="fill: white; fill-opacity: 1" />
+																					</clipPath>
+																				</defs>
+																			</svg>
+
+																			Phone Number
+																		</th-content>
+																	</th>
+																	<td colspan="2">6590 9520 (Tel)<br />6659 8263 (Fax)</td>
+																</tr>
+																<tr>
+																	<th scope="row">
+																		<th-content>
+																			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+																				<path d="M13.75 3.75C13.75 3.0625 13.1875 2.5 12.5 2.5H2.5C1.8125 2.5 1.25 3.0625 1.25 3.75M13.75 3.75V11.25C13.75 11.9375 13.1875 12.5 12.5 12.5H2.5C1.8125 12.5 1.25 11.9375 1.25 11.25V3.75M13.75 3.75L7.5 8.125L1.25 3.75" stroke="#98A2B3" style="stroke: #98a2b3; stroke: color(display-p3 0.5964 0.6352 0.7017); stroke-opacity: 1" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																			</svg>
+																			Email
+																		</th-content>
+																	</th>
+																	<td colspan="2">punggol@prpg-tc.org.sg</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										<h4>S&CC Rebates</h4>
+									</button>
+								</div>
+								<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="accordion-para">
+											<p>Eligible Singaporean households living in HDB flats will receive GSTV – S&CC Rebates to offset between 2 and 4 months of S&CC over FY2024.</p>
+											<p>Announced in Budget 2024, additional one-off 0.5-month of S&CC Rebate will be given in January 2025.</p>
+											<p>In total, eligible HDB households will receive up to 4 months of S&CC rebates in FY2024.</p>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table-styled table align-middle table-bordered">
+												<thead>
+													<tr class="align-middle">
+														<th scope="col" rowspan="2">HDB Flat Type and<br />Disbursement Month</th>
+														<th scope="col" colspan="4" class="text-center">Number of months payout</th>
+													</tr>
+													<tr class="align-middle">
+														<th scope="col">1- and 2-room</th>
+														<th scope="col">3- and 4-room</th>
+														<th scope="col">5-Room</th>
+														<th scope="col">Executive/ Multi-generation</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="row">Apr 2024</td>
+														<td>1.0</td>
+														<td>1.0</td>
+														<td>0.5</td>
+														<td>0.5</td>
+													</tr>
+													<tr>
+														<td scope="row">Jul 2024</td>
+														<td>1.0</td>
+														<td>0.5</td>
+														<td>0.5</td>
+														<td>0.5</td>
+													</tr>
+													<tr>
+														<td scope="row">Oct 2024</td>
+														<td>1.0</td>
+														<td>0.5</td>
+														<td>0.5</td>
+														<td>0.5</td>
+													</tr>
+													<tr>
+														<td scope="row">Jan 2025</td>
+														<td>0.5+0.5</td>
+														<td>0.5+0.5</td>
+														<td>0.5+0.5</td>
+														<td>0.5</td>
+													</tr>
+													<tr>
+														<td scope="row">Total</td>
+														<td>4.0</td>
+														<td>3.0</td>
+														<td>2.5</td>
+														<td>2.0</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="accordion-para">
+											<p class="highlighted">Notes:</p>
+
+											<ol>
+												<li>Number of months of S&CC Rebate in January 2025 includes the B2024 COL S&CC Rebate.</li>
+												<li>Households with no Singaporean flat owner or occupier in the flat, whose flat owner(s) or essential occupier(s) own or have any interest in a private property, or have rented out the entire flat, are not eligible for the S&CC Rebate.</li>
+											</ol>
+
+											<p>HDB residents can check or enquire on their household's eligibility for the GSTV - S&CC Rebate by logging into My HDBPage via HDB InfoWEB with their Singpass and following these steps: My Flat > Purhased/Rental Flat > S&CC Rebate.</p>
+											<p>For enquiries on your household's S&CC payment and account status, residents can contact the Town Council at 6590 9320/520.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="line-block none"></div>
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 social-group">
+							<div class="icon-left">
+								<a href="https://www.facebook.com/prpg.tc" target="_blank"><img src="im/icon-facebook.svg" alt="" /></a>
+							</div>
+							<div class="text-right">
+								<h5>Follow us on Facebook</h5>
+								<p>Stay informed about town council news and never miss a community update again.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fat-footer">
+				<div class="container">
+					<div class="row top">
+						<div class="col-12 col-md-2 footer-left">
+							<img src="im/logo.png" alt="" />
+						</div>
+						<div class="col-12 col-md-10 column">
+							<div class="left">
+								<div class="group-hdr">Resources</div>
+								<div class="group">
+									<a href="#">Newsletter</a>
+									<a href="#">Annual Report</a>
+									<a href="#">Maintenance / Block Washing</a>
+									<a href="#">Forms</a>
+								</div>
+							</div>
+							<div class="right">
+								<div class="group-hdr">Legal</div>
+								<div class="group">
+									<a href="#">Whistle-Blowing Policy</a>
+									<a href="#">Personal Data Protection Policy</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bottom">
+						<div class="col-12 line"></div>
+						<div class="col-12 col-md-8">© <span id="copyright-year"></span> Pasir Ris - Punggol Town Council. All rights reserved.</div>
+						<div class="col-12 col-md-4 icon">
+							<a href="https://www.facebook.com">
+								<img src="im/icon-social-facebook.svg" alt="" />
+							</a>
+							<a href="https://www.instagram.com">
+								<img src="im/icon-social-instagram.svg" alt="" />
+							</a>
+							<a href="https://www.tiktok.com">
+								<img src="im/icon-social-tiktok.svg" alt="" />
+							</a>
+							<a href="https://www.youtube.com">
+								<img src="im/icon-social-youtube.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+			// highlight current nav
+			document.getElementById("nav-our-services").classList.add("active");
+			document.getElementById("nav-service-and-conservancy").classList.add("active");
+		</script>
+	</body>
+
+</html>

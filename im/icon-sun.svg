@@ -1,0 +1,10 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="sun" clip-path="url(#clip0_7328_4015)">
+<path id="Icon" d="M12.3333 1V3M12.3333 21V23M4.55325 4.22L5.97325 5.64M18.6933 18.36L20.1133 19.78M1.33325 12H3.33325M21.3333 12H23.3333M4.55325 19.78L5.97325 18.36M18.6933 5.64L20.1133 4.22M17.3333 12C17.3333 14.7614 15.0947 17 12.3333 17C9.57183 17 7.33325 14.7614 7.33325 12C7.33325 9.23858 9.57183 7 12.3333 7C15.0947 7 17.3333 9.23858 17.3333 12Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_7328_4015">
+<rect width="24" height="24" fill="white" transform="translate(0.333252)"/>
+</clipPath>
+</defs>
+</svg>

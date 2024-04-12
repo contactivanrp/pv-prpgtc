@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Our Town Councillors & Officers</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet" href="css/_pill.css" type="text/css" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_committee_card.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body class="p-our-town-councillors-and-officers">
+		<nav>
+			<div id="navbar_container">
+				<div class="container">
+					<div class="navbar-buttons">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html"><img src="im/logo.png" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav ms-auto">
+									<li id="nav-home" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+									<li id="nav-our-people" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="what_we_do.html" id="nav-what-we-do">What We Do</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="where_we_are.html" id="nav-where-we-are">Where We Are</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_members_of_parliament.html" id="nav-our-members-of-parliament">Our Members Of Parliament</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_town_councillors_and_officers.html" id="nav-our-town-councillors-and-officers">Our Town Councillors &amp; Officers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_functions.html" id="nav-our-functions">Our Functions</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-services" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="service_and_conservancy.html" id="nav-service-and-conservancy">Service &amp; Conservancy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="bulky_refuse_removal.html" id="nav-bulky-refuse-removal">Bulky Refuse Removal</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="facility_booking.html" id="nav-facility-booking">Facility Booking</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="handyman_services.html" id="nav-handyman-services">Handyman Services</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header">
+																	<a href="light_bulb.html" id="nav-light-bulb">Light Bulb <span class="badge rounded-pill standard_pill">New</span></a>
+																</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-briefcase.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="temporary_occupation_license.html" id="nav-temporary-occupation-license">Temporary Occupation License</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-news" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="news_and_events.html" id="nav-news-and-events">News &amp; Events</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="newsletter.html" id="nav-newsletter">Newsletter</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="publications.html" id="nav-publications">Publications</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="https://www.emservices.com.sg/tenders" target="_blank" id="nav-tender-results">Tender Results</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-policies" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="whistle_blowing.html" id="nav-whistle-blowing">Whistle-Blowing</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="personal_data_protection_policy.html" id="nav-personal-data-protection-policy">Personal Data Protection Policy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-forms" class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+									<li id="nav-contact-us" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_locations.html" id="nav-our-locations">Our Locations</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="careers.html" id="nav-careers">Careers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- navbar-collapse.// -->
+						</div>
+						<!-- container-fluid.// -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="s-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-5">
+						<h1 class="variant">Our Town Councillors & Officers</h1>
+					</div>
+					<div class="col-12 col-md-7 image-row">
+						<div class="mask-small" style="background-image: url('im/bg-top-view-mrt.png'); background-position: 50% 55%"></div>
+						<div class="mask-large" style="background-image: url('im/bg-waterwaypoint-bridge.png'); background-position: 50% 55%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="section-wrapper" style="padding-top: 9.6rem; padding-bottom: 17rem; gap: 9rem">
+			<section class="s-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="c-header-text">
+								<div class="hero-top">
+									<div class="hero-top-hdr">
+										<h6>28 August 2022 to 27 August 2024</h6>
+										<h1 class="small">14th Term Pasir Ris - Punggol Town Councillors</h1>
+									</div>
+
+									<div class="hero-top-desc none">
+										<pre>// Description</pre>
+									</div>
+								</div>
+
+								<div class="hero-bottom none">
+									<pre>// Other Elements</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mp-grid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-9 col-lg-6">
+							<div class="header-group">
+								<h3>Executive Committee (EXCO)</h3>
+								<p>The Council’s Exco comprises the Advisor, Chairman, Vice Chairmen, Elected Members, Secretary and the chairmen of all Standing Committees. The Exco acts for and on behalf of Council to advise, establish, implement, oversee and review the Town Council’s corporate plan.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" style="padding-left: -2rem; padding-right: -2rem">
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-01">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Mr Teo Chee Hean</div>
+										<p>Senior Minister and Coordinating Minister for National Security First Advisor</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: -0.5rem; top: -2rem; width: auto; height: 40rem" src="im/mp-Teo Chee Hean.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-02">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Mr Sharael Taha</div>
+										<p>Chairman</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: -0.5rem; top: -0rem; width: auto; height: 40rem" src="im/mp-Sharael Taha.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-03">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Dr Janil Puthucheary</div>
+										<p>Senior Minister of State, Ministry of Communications and Information & Ministry of Health Government Whip Vice-Chairman</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img"><img style="position: absolute; left: -0rem; top: -1rem; width: auto; height: 40rem;"" src=" im/mp-Dr Janil.jpeg" alt="" /></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-04">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Ms Sun Xueling</div>
+										<p>Minister of State, Ministry of Home Affairs & Ministry of Social and Family Development Vice-Chairman of Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: 0rem; top: -1.5rem; width: auto; height: 39rem" src="im/mp-Sun XueLing.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-05">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Mr Desmond Tan</div>
+										<p>Minister of State, Prime Minister's Office Elected Member</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: -0rem; top: -1rem; width: auto; height: 40rem" src="im/mp-Desmond Tan.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-06">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Ms Yeo Wan Ling</div>
+										<p>Elected Member</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: -2rem; top: -1.2rem; width: auto; height: 34.3rem" src="im/mp-Yeo WanLing.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="mp-card-container" id="card-07">
+								<div class="mp_card">
+									<div class="card-hdr">
+										<div class="card-name">Dr Lee Nai Jia</div>
+										<p>Secretary</p>
+										<p>Pasir Ris - Punggol Town Council</p>
+									</div>
+									<div class="card-avatar">
+										<div class="max-space"></div>
+										<div class="mask-crop">
+											<div class="mask-grp">
+												<div class="mask-rec">
+													<div class="rec red"></div>
+													<div class="rec blue"></div>
+												</div>
+												<div class="mask-img">
+													<img style="position: absolute; left: -2.5rem; top: -2rem; width: auto; height: 33rem" src="im/mp-Dr Lee Nai Jia.jpeg" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section class="section-committee">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 row-heading">
+						<h2>Committee</h2>
+						<p>To view more committee members, please click on the drop-down menu and select the division.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 row-select">
+						<select class="form-select" aria-label="Default select example">
+							<option value="communications-and-engagement" selected>Communications & Engagement</option>
+							<option value="projects">Projects</option>
+							<option value="audit">Audit</option>
+							<option value="estates">Estates</option>
+							<option value="sustainability">Sustainability</option>
+							<option value="community-affairs">Community Affairs</option>
+							<option value="investment-and-finance">Investment & Finance</option>
+							<option value="key-officers" style="display: none;">Key Officers</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="communications-and-engagement" class="s-committee-members">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Communication & Engagement</h4>
+							<ul>
+								<li>Formulate and update overarching communications & engagement direction, and strategies to reach/engage our residents on our Council's functions and developments</li>
+								<li>Develop and maintain media relations, and utilise new/synergise our existing resources to ensure effective dissemination of news and information</li>
+								<li>Build community relations, sense of ownership and empathy amongst our residents</li>
+								<li>Establish and direct our Council's public activities towards social responsibility, social inclusivity and community building</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-01.png" alt="Syed Ahmad Bin Syed Yusof Alsagoff, BBM" />
+								<div class="header-group">
+									<div class="header-name">Syed Ahmad Bin Syed Yusof Alsagoff, BBM</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-02.png" alt="Ong Chee Keong, PBM" />
+								<div class="header-group">
+									<div class="header-name">Ong Chee Keong, PBM</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-03.png" alt="Audrey Lau Lee Kian, PBM" />
+								<div class="header-group">
+									<div class="header-name">Audrey Lau Lee Kian, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-04.png" alt="Jobie Lee Ern Tong" />
+								<div class="header-group">
+									<div class="header-name">Jobie Lee Ern Tong</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-05.png" alt="Jonn Tan Teck Chong" />
+								<div class="header-group">
+									<div class="header-name">Jonn Tan Teck Chong</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/im-committee-member-06.png" alt="Kathryn Goy Han Huey" />
+								<div class="header-group">
+									<div class="header-name">Kathryn Goy Han Huey</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Projects</h4>
+							<ul>
+								<li>Develop the identities and characters of our Towns through our improvement and upgrading projects, and our cyclical works</li>
+								<li>Explore ways to enhance our environment</li>
+								<li>Monitor our improvement projects and cyclical works</li>
+								<li>Formulate and review guidelines on the distribution of budget for our improvement projects</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Alvin_Yeo_Siek_Khoon_BBM.png" alt="Alvin Yeo Siek Khoon, BBM(L)" />
+								<div class="header-group">
+									<div class="header-name">Alvin Yeo Siek Khoon, BBM(L)</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Derrick_Ong_Ter_Koh_BBM.png" alt="Derrick Ong Ter Koh, BBM" />
+								<div class="header-group">
+									<div class="header-name">Derrick Ong Ter Koh, BBM</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Kader.png" alt="Abdul Kader Bin Hussin" />
+								<div class="header-group">
+									<div class="header-name">Abdul Kader Bin Hussin</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Albert_Lee.png" alt="Albert Lee Yih Jyh" />
+								<div class="header-group">
+									<div class="header-name">Albert Lee Yih Jyh</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Wai_Keun.png" alt="Chang Wai Keun" />
+								<div class="header-group">
+									<div class="header-name">Chang Wai Keun</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Goh_Soo_Pheng.png" alt="Goh Soo Pheng, PBM" />
+								<div class="header-group">
+									<div class="header-name">Goh Soo Pheng, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Marc_Tan_Chiah_Choon.png" alt="Marc Tan Chiah Choon" />
+								<div class="header-group">
+									<div class="header-name">Marc Tan Chiah Choon</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Patricia_Foo_Shuen_Lee.png" alt="Patricia Foo Shuen Lee, PBM" />
+								<div class="header-group">
+									<div class="header-name">Patricia Foo Shuen Lee, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Patrick_Pang.png" alt="Patrick Pang Zhiwei, PBM" />
+								<div class="header-group">
+									<div class="header-name">Patrick Pang Zhiwei, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Peter_Lee_Yeow_Khoon.png" alt="Peter Lee Yeow Khoon" />
+								<div class="header-group">
+									<div class="header-name">Peter Lee Yeow Khoon</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Raymond.png" alt="Raymond Puah Yong Meng" />
+								<div class="header-group">
+									<div class="header-name">Raymond Puah Yong Meng</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Afiqah.png" alt="Afiqah Binti Rashi" />
+								<div class="header-group">
+									<div class="header-name">Afiqah Binti Rashid</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="audit" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Audit</h4>
+							<ul>
+								<li>Review adequacy of policies and procedures on internal controls with our Council's management, external and internal auditors; statutory financial statement with external auditor; scope and results of the external auditor's examination; accounting policies from audit and management responses; scope, results and effectiveness of internal auditor, and financial reporting controls with our Council's management; and recommend external auditors</li>
+								<li>Evaluate co-operation received by external/ internal auditor, and obtain comments on responsiveness of external auditor to our Council's needs</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Dr_Ernest_Kan.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Dr Ernest Kan Yaw Kiong, JP, BBM</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Chia_Ti_Yu.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Chia Ti Yu</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Choo_Swee_Cher.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Choo Swee Cher</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Haja_Nizamudeen.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Haja Nizamudeen, JP, BBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jeffrey_Chong_Huat_Kwong.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Jeffery Chong Huat Kwong</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jeffrey_Tan.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Jeffrey Tan Eng Loong, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Paul_Lim_Chee_Siong_PBM.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Paul Lim Chee Siong, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="estates" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Estates</h4>
+							<ul>
+								<li>Plan, execute and review our routine estate maintenance programmes (general building maintenance, conservancy, horticulture etc) and manage corresponding term contracts</li>
+								<li>Formulate and implement by-laws governing the management, maintenance and control of the use of common properties</li>
+								<li>Formulate guidelines for control and use of void deck, open spaces and other common property, and review of terms and conditions for use of common areas</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Charlie_Cheong_Wing_Tim.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Charlie Cheong Wing Tim, BBM</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Joseph_Lim_Beng_Huat.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Joseph Lim Beng Huat, PBM</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Adrian_Tan_Wei_Ren.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Adrian Tan Wei Ren</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Albert_Koh_Tiong_Wah.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Albert Koh Tong Wah, BBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Eric_Ek_Gek_Soon.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Eric Ek Gek Soon, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Mohd_Azuan.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Mohd Azuan Tan Bin Hasan Tan</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Gunalan_SO_Singaravelu.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Gunalan s/o Singaravelu</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Ho_Chee_Yuen.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Ho Chee Yuen</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Irene_Low_Lay_Hwa.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Irene Low Lay Hwa, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jacky_Peh_Peng_Xiang.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Jacky Peh Peng Xiang</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Ng_Wushen.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Ng Wushen</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Ryzuan_Bin_Rahmat.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Ryzuan Bin Rahmat, PBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sustainability" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Sustainability</h4>
+							<ul>
+								<li>Redefine the way we think about sustainability, forming a three-prong approach in support of Action for Green Towns</li>
+								<li>Highlight Green Features, supporting sustainability projects</li>
+								<li>Manage our resources and reviewing our operational approach in line with UN's Sustainable Development Goals through 3Ps (Projects, Processes, Partners)</li>
+								<li>Engage residents in sustainability ideas and efforts, foster a sense of belonging for residents to live sustainably under 7Rs of Sustainability</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Remus.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Remus Chua Jin Seng</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Calvin_Aw.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Calvin Aw Wei Ren</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Balakumaran.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Balakumaran Krishnasamy</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jia_Hao.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Kwek Jia Hao</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jerald_Tan.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Jerald Tan</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Sharon_Tay.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Sharon Tay Sock Lyn</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="community-affairs" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Community Affairs</h4>
+							<ul>
+								<li>Liaises with social service organisations, grassroot organisations, Government departments, statutory boards and others to provide assistance to families with social problems and financial difficulties</li>
+								<li>Undertake projects to improve social well-being and welfare of our residents</li>
+								<li>Formulate procedures and policies towards administrating our residents' appeal following infringement of our Council's by-laws; evaluate and decide on these appeals</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Alex_Lim_Zong_Wei.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Alex Lim Zong Wei, PBM</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/David_Ong_Teck_Beng.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">David Ong Teck Beng, BBM</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Celestine.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Erh Bee Chin @ Celestine Erh</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Jessie_Cheng.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Jessie Cheng Yee Ping</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Kitson_Leonard_Lee.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Kitson Leonard Lee</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Chin_Chye.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Ong Chin Chye</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="investment-and-finance" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Investment & Finance</h4>
+							<ul>
+								<li>Regulate and administer our Council's Financial Rules on proper allocation and use of funds</li>
+								<li>Review annual budget and financial statements with our Council's management; financial performance and recommend necessary actions and investment criteria; recommend and administer investment surplus funds accordingly</li>
+								<li>Monitor our Council's arrears position and formulate appropriate arrears management policies and recovery actions</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Tay_Hwee_Ling.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Tay Hwee Ling</div>
+									<div class="subheader-role">Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Gene_Hiah_Keng_Hao.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Gene Hiah Keng Hao, PBM</div>
+									<div class="subheader-role">Vice-Chairman</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Johnny_Lee_Kim_Leng.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Johnny Lee Kim Leng, BBM</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Loke_Choon_Wai.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Loke Choon Wai</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Malvin.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Malvin Chiang Loong</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Tan_Kai_Ming.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Tan Kai Ming</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/Haitao.png" alt="" />
+								<div class="header-group">
+									<div class="header-name">Tang Haitao</div>
+									<div class="subheader-role">Member</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="key-officers" class="s-committee-members" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="committee-header">
+							<h4>Key Officers</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/user-profile-placeholder.png" alt="" style="display: none" />
+								<div class="header-group">
+									<div class="header-name">Kwok Wei Kin</div>
+									<div class="subheader-role">General Manager</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/user-profile-placeholder.png" alt="" style="display: none" />
+								<div class="header-group">
+									<div class="header-name">Cindy Ng</div>
+									<div class="subheader-role">Deputy General Manager</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/user-profile-placeholder.png" alt="" style="display: none" />
+								<div class="header-group">
+									<div class="header-name">Jonathan Seah</div>
+									<div class="subheader-role">Deputy General Manager</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/user-profile-placeholder.png" alt="" style="display: none" />
+								<div class="header-group">
+									<div class="header-name">Doreen Kong</div>
+									<div class="subheader-role">Senior Finance & Admin Managers</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-4 col-lg-4">
+						<div class="committee-card-container">
+							<div class="committee_card">
+								<img src="im/user-profile-placeholder.png" alt="" style="display: none" />
+								<div class="header-group">
+									<div class="header-name">Connie Khua</div>
+									<div class="subheader-role">Senior Finance & Admin Managers</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="line-block none"></div>
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 social-group">
+							<div class="icon-left">
+								<a href="https://www.facebook.com/prpg.tc" target="_blank"><img src="im/icon-facebook.svg" alt="" /></a>
+							</div>
+							<div class="text-right">
+								<h5>Follow us on Facebook</h5>
+								<p>Stay informed about town council news and never miss a community update again.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fat-footer">
+				<div class="container">
+					<div class="row top">
+						<div class="col-12 col-md-2 footer-left">
+							<img src="im/logo.png" alt="" />
+						</div>
+						<div class="col-12 col-md-10 column">
+							<div class="left">
+								<div class="group-hdr">Resources</div>
+								<div class="group">
+									<a href="#">Newsletter</a>
+									<a href="#">Annual Report</a>
+									<a href="#">Maintenance / Block Washing</a>
+									<a href="#">Forms</a>
+								</div>
+							</div>
+							<div class="right">
+								<div class="group-hdr">Legal</div>
+								<div class="group">
+									<a href="#">Whistle-Blowing Policy</a>
+									<a href="#">Personal Data Protection Policy</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bottom">
+						<div class="col-12 line"></div>
+						<div class="col-12 col-md-8">© <span id="copyright-year"></span> Pasir Ris - Punggol Town Council. All rights reserved.</div>
+						<div class="col-12 col-md-4 icon">
+							<a href="https://www.facebook.com">
+								<img src="im/icon-social-facebook.svg" alt="" />
+							</a>
+							<a href="https://www.instagram.com">
+								<img src="im/icon-social-instagram.svg" alt="" />
+							</a>
+							<a href="https://www.tiktok.com">
+								<img src="im/icon-social-tiktok.svg" alt="" />
+							</a>
+							<a href="https://www.youtube.com">
+								<img src="im/icon-social-youtube.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			// highlight current nav
+			document.getElementById("nav-our-people").classList.add("active");
+			document.getElementById("nav-our-town-councillors-and-officers").classList.add("active");
+
+			document.addEventListener("DOMContentLoaded", function () {
+				const selectElement = document.querySelector(".form-select");
+
+				selectElement.addEventListener("change", function () {
+					// Hide all sections
+					document.querySelectorAll(".s-committee-members").forEach(function (section) {
+						section.style.display = "none";
+					});
+
+					// Show the selected section
+					const selectedValue = this.value;
+					const selectedSection = document.getElementById(selectedValue);
+					if (selectedSection) {
+						selectedSection.style.display = "";
+					}
+				});
+
+				// Initially trigger the change event to show the correct section on page load
+				selectElement.dispatchEvent(new Event("change"));
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet" href="css/_pill.css" type="text/css" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_committee_card.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body class="p-our-town-councillors-and-officers">
+		<nav>
+			<div id="navbar_container">
+				<div class="container">
+					<div class="navbar-buttons">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html"><img src="im/logo.png" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav ms-auto">
+									<li id="nav-home" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+									<li id="nav-our-people" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="what_we_do.html" id="nav-what-we-do">What We Do</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="where_we_are.html" id="nav-where-we-are">Where We Are</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_members_of_parliament.html" id="nav-our-members-of-parliament">Our Members Of Parliament</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_town_councillors_and_officers.html" id="nav-our-town-councillors-and-officers">Our Town Councillors &amp; Officers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_functions.html" id="nav-our-functions">Our Functions</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-services" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="service_and_conservancy.html" id="nav-service-and-conservancy">Service &amp; Conservancy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="bulky_refuse_removal.html" id="nav-bulky-refuse-removal">Bulky Refuse Removal</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="facility_booking.html" id="nav-facility-booking">Facility Booking</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="handyman_services.html" id="nav-handyman-services">Handyman Services</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="light_bulb.html" id="nav-light-bulb">Light Bulb <span class="badge rounded-pill standard_pill">New</span></a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-briefcase.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="temporary_occupation_license.html" id="nav-temporary-occupation-license">Temporary Occupation License</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-news" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="news_and_events.html" id="nav-news-and-events">News &amp; Events</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="newsletter.html" id="nav-newsletter">Newsletter</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="publications.html" id="nav-publications">Publications</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="https://www.emservices.com.sg/tenders" target="_blank" id="nav-tender-results">Tender Results</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-policies" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="whistle_blowing.html" id="nav-whistle-blowing">Whistle-Blowing</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="personal_data_protection_policy.html" id="nav-personal-data-protection-policy">Personal Data Protection Policy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-forms" class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+									<li id="nav-contact-us" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_locations.html" id="nav-our-locations">Our Locations</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="careers.html" id="nav-careers">Careers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- navbar-collapse.// -->
+						</div>
+						<!-- container-fluid.// -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="s-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-5">
+						<h1 class="variant">Forms</h1>
+					</div>
+					<div class="col-12 col-md-7 image-row">
+						<div class="mask-small" style="background-image: url('im/bg-top-view-mrt.png'); background-position: 50% 55%"></div>
+						<div class="mask-large" style="background-image: url('im/bg-waterwaypoint-bridge.png'); background-position: 50% 55%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="section-wrapper wrapper--green">
+			<section class="s-other-publications">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="content-container">
+								<div class="header-group">
+									<h4>Downloadable Forms</h4>
+									<div>
+										<p style="margin-bottom: 1.4rem">Please complete and return these forms to the respective office indicated in the forms.</p>
+										<p>For any enquiries, you may contact our Finance Department at 6585 4938 (Pasir Ris) / 6590 9500 (Punggol).</p>
+									</div>
+								</div>
+								<div class="c-files-download">
+									<div class="row-header">
+										<h6 class="variant">Files download</h6>
+										<button class="standard_button has-icon" id="downloadSelected">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M5.83333 8.33333L10 12.5M10 12.5L14.1667 8.33333M10 12.5V2.5" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											<span>Download</span>
+										</button>
+									</div>
+									<div class="row-content-header">
+										<div class="row-content-start">
+											<input class="form-check-input" type="checkbox" id="selectAll" />
+											<div class="header-text">Select all files</div>
+										</div>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Interbank GIRO Form.pdf" value="Interbank GIRO Form.pdf" />
+											<a href="im/Interbank GIRO Form.pdf" download="Interbank GIRO Form.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Interbank Giro Application</div>
+													<div class="file-details-size">763 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Interbank GIRO Form.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Recurring-Credit-Card-Payment-Form-(RCCS) Application_Update.pdf" value="Recurring-Credit-Card-Payment-Form-(RCCS) Application_Update.pdf" />
+											<a href="im/Recurring-Credit-Card-Payment-Form-(RCCS) Application_Update.pdf" download="Recurring-Credit-Card-Payment-Form-(RCCS) Application_Update.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Recurring Credit Card Payment Application/Update</div>
+													<div class="file-details-size">165 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Recurring-Credit-Card-Payment-Form-(RCCS) Application_Update.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="GIRO_RCCS-Termination-Form.pdf" value="GIRO_RCCS-Termination-Form.pdf" />
+											<a href="im/GIRO_RCCS-Termination-Form.pdf" download="GIRO_RCCS-Termination-Form.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">GIRO/RCC Termination</div>
+													<div class="file-details-size">119 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/GIRO_RCCS-Termination-Form.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Direct-Credit-Authorisation-Form.pdf" value="Direct-Credit-Authorisation-Form.pdf" />
+											<a href="im/Direct-Credit-Authorisation-Form.pdf" download="Direct-Credit-Authorisation-Form.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Direct Credit Authorization</div>
+													<div class="file-details-size">110 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Direct-Credit-Authorisation-Form.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Change-of-Correspondence-Address-Form.pdf" value="Change-of-Correspondence-Address-Form.pdf" />
+											<a href="im/Change-of-Correspondence-Address-Form.pdf" download="Change-of-Correspondence-Address-Form.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Change of Correspondence Address</div>
+													<div class="file-details-size">111 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Change-of-Correspondence-Address-Form.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Bulky Refuse Removal Form.pdf" value="Bulky Refuse Removal Form.pdf" />
+											<a href="im/Bulky Refuse Removal Form.pdf" download="Bulky Refuse Removal Form.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Bulky Household Refuse Removal Service</div>
+													<div class="file-details-size">107 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Bulky Refuse Removal Form.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+									<div class="row-content">
+										<div class="row-content-start">
+											<input class="file-checkbox form-check-input" type="checkbox" data-file-path="Appeal for Notice of Composition.pdf" value="Appeal for Notice of Composition.pdf" />
+											<a href="im/Appeal for Notice of Composition.pdf" download="Appeal for Notice of Composition.pdf">
+												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="40" height="40" rx="20" fill="#F2F4F7" />
+													<path d="M20.8333 11.667H15C14.558 11.667 14.134 11.8426 13.8215 12.1551C13.5089 12.4677 13.3333 12.8916 13.3333 13.3337V26.667C13.3333 27.109 13.5089 27.5329 13.8215 27.8455C14.134 28.1581 14.558 28.3337 15 28.3337H25C25.442 28.3337 25.8659 28.1581 26.1785 27.8455C26.4911 27.5329 26.6667 27.109 26.6667 26.667V17.5003M20.8333 11.667L26.6667 17.5003M20.8333 11.667V17.5003H26.6667" stroke="#475467" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<div class="file-details">
+													<div class="file-details-name">Appeal for Notice of Composition</div>
+													<div class="file-details-size">126 KB</div>
+												</div>
+											</a>
+										</div>
+										<a href="im/Appeal for Notice of Composition.pdf" target="_blank">
+											<button class="standard_button is-white has-icon">View</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="line-block none"></div>
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 social-group">
+							<div class="icon-left">
+								<a href="https://www.facebook.com/prpg.tc" target="_blank"><img src="im/icon-facebook.svg" alt="" /></a>
+							</div>
+							<div class="text-right">
+								<h5>Follow us on Facebook</h5>
+								<p>Stay informed about town council news and never miss a community update again.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fat-footer">
+				<div class="container">
+					<div class="row top">
+						<div class="col-12 col-md-2 footer-left">
+							<img src="im/logo.png" alt="" />
+						</div>
+						<div class="col-12 col-md-10 column">
+							<div class="left">
+								<div class="group-hdr">Resources</div>
+								<div class="group">
+									<a href="#">Newsletter</a>
+									<a href="#">Annual Report</a>
+									<a href="#">Maintenance / Block Washing</a>
+									<a href="#">Forms</a>
+								</div>
+							</div>
+							<div class="right">
+								<div class="group-hdr">Legal</div>
+								<div class="group">
+									<a href="#">Whistle-Blowing Policy</a>
+									<a href="#">Personal Data Protection Policy</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bottom">
+						<div class="col-12 line"></div>
+						<div class="col-12 col-md-8">© <span id="copyright-year"></span> Pasir Ris - Punggol Town Council. All rights reserved.</div>
+						<div class="col-12 col-md-4 icon">
+							<a href="https://www.facebook.com">
+								<img src="im/icon-social-facebook.svg" alt="" />
+							</a>
+							<a href="https://www.instagram.com">
+								<img src="im/icon-social-instagram.svg" alt="" />
+							</a>
+							<a href="https://www.tiktok.com">
+								<img src="im/icon-social-tiktok.svg" alt="" />
+							</a>
+							<a href="https://www.youtube.com">
+								<img src="im/icon-social-youtube.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+			// highlight current nav
+			document.getElementById("nav-forms").classList.add("active");
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Function to update the state of the 'Select All' checkbox
+				function updateSelectAllCheckbox() {
+					const allCheckboxes = Array.from(document.querySelectorAll(".file-checkbox"));
+					const allChecked = allCheckboxes.every((checkbox) => checkbox.checked);
+					const selectAllCheckbox = document.getElementById("selectAll");
+					selectAllCheckbox.checked = allChecked;
+				}
+
+				// Event listener for the 'Select All' checkbox
+				document.getElementById("selectAll").addEventListener("change", function (e) {
+					const checkboxes = document.querySelectorAll(".file-checkbox");
+					checkboxes.forEach((checkbox) => {
+						checkbox.checked = e.target.checked;
+					});
+				});
+
+				// Event listeners for each file checkbox
+				document.querySelectorAll(".file-checkbox").forEach(function (checkbox) {
+					checkbox.addEventListener("change", function () {
+						updateSelectAllCheckbox();
+					});
+				});
+
+				// Download selected files with new names
+				document.getElementById("downloadSelected").addEventListener("click", function () {
+					const selectedCheckboxes = document.querySelectorAll(".file-checkbox:checked");
+					if (selectedCheckboxes.length === 0) {
+						alert("Please select at least one file to download.");
+						return;
+					}
+
+					selectedCheckboxes.forEach((checkbox, index) => {
+						const filePath = checkbox.getAttribute("data-file-path");
+						const downloadName = checkbox.value;
+						const link = document.createElement("a");
+						link.href = `im/${filePath}`;
+						link.download = downloadName;
+
+						setTimeout(() => {
+							link.click();
+						}, index * 100);
+
+						link.addEventListener("click", () => {
+							setTimeout(() => {
+								document.body.removeChild(link);
+							}, 100);
+						});
+
+						document.body.appendChild(link);
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

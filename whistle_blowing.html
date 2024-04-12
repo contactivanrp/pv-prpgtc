@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Whistle-Blowing</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<nav>
+			<div id="navbar_container">
+				<div class="container">
+					<div class="navbar-buttons">
+						<div class="top">
+							<div class="top-buttons">
+								<button type="button">
+									<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+									<p class="hide-sm">Dark Mode</p>
+								</button>
+								<button type="button">
+									<img src="im/icon-italic.svg" alt="italic icon" />
+									<p class="hide-sm">Font Size</p>
+								</button>
+								<button type="button" class="error-500">
+									<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+									<p class="hide-sm">Emergency Call</p>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html"><img src="im/logo.png" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav ms-auto">
+									<li id="nav-home" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+									<li id="nav-our-people" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="what_we_do.html" id="nav-what-we-do">What We Do</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="where_we_are.html" id="nav-where-we-are">Where We Are</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_members_of_parliament.html" id="nav-our-members-of-parliament">Our Members Of Parliament</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_town_councillors_and_officers.html" id="nav-our-town-councillors-and-officers">Our Town Councillors &amp; Officers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_functions.html" id="nav-our-functions">Our Functions</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-services" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="service_and_conservancy.html" id="nav-service-and-conservancy">Service &amp; Conservancy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="bulky_refuse_removal.html" id="nav-bulky-refuse-removal">Bulky Refuse Removal</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="facility_booking.html" id="nav-facility-booking">Facility Booking</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-users.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="handyman_services.html" id="nav-handyman-services">Handyman Services</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-sun.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="light_bulb.html" id="nav-light-bulb">Light Bulb <span class="badge rounded-pill standard_pill">New</span></a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-briefcase.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="temporary_occupation_license.html" id="nav-temporary-occupation-license">Temporary Occupation License</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-our-news" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="news_and_events.html" id="nav-news-and-events">News &amp; Events</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="newsletter.html" id="nav-newsletter">Newsletter</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="publications.html" id="nav-publications">Publications</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-clipboard.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="https://www.emservices.com.sg/tenders" target="_blank" id="nav-tender-results">Tender Results</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-policies" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="whistle_blowing.html" id="nav-whistle-blowing">Whistle-Blowing</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="personal_data_protection_policy.html" id="nav-personal-data-protection-policy">Personal Data Protection Policy</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li id="nav-forms" class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+									<li id="nav-contact-us" class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="row">
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-log-out.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="our_locations.html" id="nav-our-locations">Our Locations</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-md-6 col-lg-4 button">
+													<div class="d-flex">
+														<div class="flex-row pe-4"><img src="im/icon-refresh-ccw.svg" alt="" /></div>
+														<div class="flex-column">
+															<div class="header-group">
+																<p class="header"><a href="careers.html" id="nav-careers">Careers</a></p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- navbar-collapse.// -->
+						</div>
+						<!-- container-fluid.// -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="section-wrapper section--warm" style="padding-bottom: 3.4rem">
+			<section class="s-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="c-header-text">
+								<div class="hero-top">
+									<div class="hero-top-hdr">
+										<h6 class="none"></h6>
+										<h1>Whistle-Blowing</h1>
+									</div>
+
+									<div class="hero-top-desc">
+										<h5>Pasir Ris - Punggol Town Council (“PRPTC”) is committed to high standard of corporate governance and compliance with all laws and regulatory requirements.</h5>
+									</div>
+								</div>
+
+								<div class="hero-bottom none"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="c-inline-text-content" style="margin-top: 3.4rem; margin-bottom: 6.8rem;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="para-text">
+							<section id="purpose">
+								<h3>Purpose</h3>
+								<div class="g-para-group">
+									<p>Pasir Ris - Punggol Town Council (“PRPTC”) is committed to high standard of corporate governance and compliance with all laws and regulatory requirements. PRPTC does not tolerate nor condone any malpractice, impropriety or statutory non-compliance or wrongdoing by its Councillors and staff in the course of their work.</p>
+								</div>
+							</section>
+							<section id="scope">
+								<h3>Scope</h3>
+								<div class="g-para-group">
+									<p>This Whistle-blowing Policy (“Policy”) is intended to provide a framework to promote responsible and secured whistle-blowing without fear of reprisal, discrimination or adverse consequences, and allows PRPTC to address such reports by taking appropriate action, including, but not limited to, disciplining or terminating the employment and/or services of those responsible.</p>
+									<p>This Policy applies to all Councillors and staff as well as to all external parties who have business relationships with PRPTC such as residents, customers, vendors, suppliers, contractors, and the general public. Staff shall also include personnel belonging to the managing agent of PRPTC.</p>
+								</div>
+							</section>
+							<section id="definition">
+								<h3>Definition</h3>
+								<div class="g-para-group">
+									<p>Whistle-blowing is defined as a deliberate, voluntary disclosure of individual or organisational malpractice by a person who has or has had privileged access to data, events, or information about an actual, suspected, or anticipated wrongdoing within or by PRPTC that is within its ability to control.</p>
+								</div>
+							</section>
+							<section id="reportable-incidents">
+								<h3>Reportable Incidents</h3>
+								<div class="g-para-group">
+									<p>The following are some examples of reportable incidents covered by this Policy:</p>
+									<ol>
+										<li>Forgery, fraud, or any conduct which is an offence by law;</li>
+										<li>Embezzlement, misappropriation, theft, or criminal misuse of PRPTC’s monies, properties, assets, or resources;</li>
+										<li>Corruption, bribery, or cheating;</li>
+										<li>Abuse and misrepresentation of power and authority;</li>
+										<li>Serious conflict of interest without disclosure;</li>
+										<li>Intimidation, discrimination, harassment, personal impropriety, or profession misconduct;</li>
+										<li>Unauthorised access to, misappropriation and/or disclosure of confidential information;</li>
+										<li>Concealing information about malpractice or misconduct and/or aiding and abetting such malpractice or misconduct; and</li>
+										<li>Intentional provision of incorrect information to authorities.</li>
+									</ol>
+
+									<p>The above list is intended to give an indication of a reportable incident and is not meant to be exhaustive. If in doubt, the whistle-blower should consider consulting his or her immediate superior or follow the procedure for reporting under this Policy.</p>
+								</div>
+							</section>
+							<section id="safeguards-and-confidentiality ">
+								<h3>Safeguards & Confidentiality</h3>
+								<div class="g-para-group">
+									<p>The Policy is meant to protect genuine whistle-blowers from any unfair treatment as a result of their report. All reports must be made in good faith and PRPTC will protect the confidentiality and anonymity of the whistle-blower, consistent with the need to conduct an adequate review.</p>
+									<p>The Policy is not a route for taking up personal grievances. False, misleading, frivolous, or unsubstantiated claims or complaints will be disregarded. PRPTC does not condone any abuse of the Policy for personal gains, or with malicious intent, and will reserve its right to take action against those who abuse the Policy for personal gains, or with malicious intent.</p>
+									<p>If a whistle-blower believes that he or she is being subjected to discrimination, retaliation or harassment for having made a report under this Policy, he or she should immediately report those facts to his or her immediate superior or follow the procedure for reporting under this Policy promptly to facilitate investigation and the taking of appropriate action.</p>
+								</div>
+							</section>
+							<section id="procedure-on-whistle-blowing">
+								<h3>Procedure On Whistle-blowing</h3>
+								<div class="g-para-group">
+									<p>Staff of PRPTC may make the report to his or her immediate supervisor or to the Secretary of PRPTC. If the report is made to the immediate supervisor of the staff, the immediate supervisor shall also report the matter to the Secretary of PRPTC, Chairman of PRPTC Audit Committee or the Chairman of PRPTC.</p>
+									<p>Alternatively, any person covered by this Policy may make the report to the Secretary of PRPTC, Chairman of PRPTC Audit Committee or the Chairman of PRPTC. All reports shall be made via email to whistleblow@prpg-tc.org.sg which will only be accessed by the Secretary of PRPTC, Chairman of PRPTC Audit Committee and the Chairman of PRPTC.</p>
+									<p>The Chairman of PRPTC together with the Chairman of PRPTC Audit Committee and the Secretary of PRPTC shall decide as to whether an investigation on the report made by the whistle-blower should proceed or no further action is considered necessary.</p>
+									<p>For effective review and subsequent investigation, all whistle-blowers are encouraged to provide as much information and be as specific as possible in his or her report, including his or her contact details, in case further information or clarification is required. All reports and the identity of the whistle-blowers shall be treated with confidentiality.</p>
+									<p>If there is a prima facie case, a thorough investigation will be conducted. However, there may be circumstances where there is insufficient evidence to proceed, especially in the case of anonymous reporting. In cases where an investigation is proceeded with, the person conducting the investigation will keep the whistle-blower informed (where he or she is identifiable) of the progress of the investigation. Where the whistle-blower is identifiable, but a decision is made not to proceed with an investigation, the Secretary of PRPTC, Chairman of PRPTC Audit Committee or the Chairman of PRPTC should advise the whistle-blower that there will be no investigation with reasons for the decision.</p>
+									<p>After making the report, the whistle-blower should refrain from confronting the person being reported or making further investigation. The investigation team may ask the whistle-blower for further information or clarification.</p>
+									<p>After the decision is made to proceed with an investigation, all reports made shall be investigated as soon as possible and should be resolved and the details of the investigation reported to the Chairman of PRPTC within three months of receiving the whistle-blower’s report.</p>
+									<p>All investigation reports upon completion are to be retained at the Office of the Chairman of PRPTC to ensure confidentiality as well as for future reference.</p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="line-block none"></div>
+			<div class="social">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 social-group">
+							<div class="icon-left">
+								<a href="https://www.facebook.com/prpg.tc" target="_blank"><img src="im/icon-facebook.svg" alt="" /></a>
+							</div>
+							<div class="text-right">
+								<h5>Follow us on Facebook</h5>
+								<p>Stay informed about town council news and never miss a community update again.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fat-footer">
+				<div class="container">
+					<div class="row top">
+						<div class="col-12 col-md-2 footer-left">
+							<img src="im/logo.png" alt="" />
+						</div>
+						<div class="col-12 col-md-10 column">
+							<div class="left">
+								<div class="group-hdr">Resources</div>
+								<div class="group">
+									<a href="#">Newsletter</a>
+									<a href="#">Annual Report</a>
+									<a href="#">Maintenance / Block Washing</a>
+									<a href="#">Forms</a>
+								</div>
+							</div>
+							<div class="right">
+								<div class="group-hdr">Legal</div>
+								<div class="group">
+									<a href="#">Whistle-Blowing Policy</a>
+									<a href="#">Personal Data Protection Policy</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bottom">
+						<div class="col-12 line"></div>
+						<div class="col-12 col-md-8">© <span id="copyright-year"></span> Pasir Ris - Punggol Town Council. All rights reserved.</div>
+						<div class="col-12 col-md-4 icon">
+							<a href="https://www.facebook.com">
+								<img src="im/icon-social-facebook.svg" alt="" />
+							</a>
+							<a href="https://www.instagram.com">
+								<img src="im/icon-social-instagram.svg" alt="" />
+							</a>
+							<a href="https://www.tiktok.com">
+								<img src="im/icon-social-tiktok.svg" alt="" />
+							</a>
+							<a href="https://www.youtube.com">
+								<img src="im/icon-social-youtube.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+			// highlight current nav
+			document.getElementById("nav-policies").classList.add("active");
+			document.getElementById("nav-whistle-blowing").classList.add("active");
+		</script>
+	</body>
+
+</html>

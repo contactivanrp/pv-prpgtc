@@ -1,0 +1,345 @@
+@import "custom.less";
+
+#navbar_container {
+	background: @color-beige-01;
+}
+
+.navbar {
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.4rem;
+
+	a {
+		color: @color-gray-12;
+	}
+
+	.active {
+		background: none;
+	}
+
+	.active a {
+		color: @color-green-06;
+	}
+
+	.navbar-brand {
+		margin-top: -40px;
+  		padding: 15px 0;
+	}
+
+	.navbar-brand img {
+		max-width: 6rem;
+	}
+
+	.nav-link {
+		font-size: 1.6rem;
+		display: flex;
+	}
+
+	.dropdown-toggle::after {
+        border: none !important;
+		background-image: url(../im/icon-chevron-down.svg);
+		width: 20px;
+		height: 20px;
+		display: flex;
+		background-size: 20px 20px;
+		content: '';
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+
+	.show::after {
+		transform: rotate(180deg); 
+	}
+	
+	.dropdown-toggle:after { 
+		transition: 0.3s; 
+	}
+
+	.megamenu { 
+		padding: 2.5rem;
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 2rem;
+		color: @color-gray-11;
+	}
+
+	.megamenu img {
+		max-width: 2.4rem;
+	}
+
+	.megamenu p.header {
+		color: @color-gray-19;
+		font-size: 1.6rem;
+		padding-bottom: 0.5rem;
+		margin: 0;
+	}
+
+	.megamenu .descr {
+		padding-bottom: 1.5rem;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.4rem; 	
+	}
+}
+
+.top {
+    display: flex;
+    justify-content: end;
+
+    .top-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        border-radius: 0px 0px 8px 8px;
+        /* Shadow/md */
+        box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+
+        overflow: hidden;
+
+        button {
+            background: none;
+            outline: none;
+            border: none;
+
+            display: flex;
+            padding: 10px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            border-right: 1px solid var(--yellow-gray-50, #FAF8F6);
+            background: var(--White, #FFF);
+
+            p {
+                color: @color-gray-11;
+                font-family: Gill Sans;
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 1.8rem;
+            }
+
+            &:active {
+                background-color: #F2F4F7;
+            }
+        }
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .hide-sm {
+            display: none;
+
+            @media (min-width: @md) {
+                display: inherit;
+            }
+        }
+
+        .error-500 {
+            background: @color-red-02;
+            border-right: none;
+
+            p {
+                color: @color-white;
+            }
+
+            &:active {
+                background-color: @color-red-03;
+            }
+        }
+    }
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	#navbar_container {
+		height: 140px;
+
+		.container {
+			width: 80%;
+			left: 10%;
+			position: absolute;
+			z-index: 10000;
+		}
+	}
+
+	.navbar {
+		.navbar-brand img {
+			max-width: 8rem;
+		}
+		
+		li:first-child.nav-item {
+			padding: 0 1.4rem 0 0;
+		}
+
+		li:last-child.nav-item {
+			padding: 0 0 0 1.4rem;
+		}
+
+		li.nav-item {
+			padding: 0 1.4rem;
+		}
+
+		.has-megamenu {
+			position: static!important;
+		}
+		
+		.megamenu {
+			left: 0; 
+			right: 0; 
+			width: 100%; 
+			margin-top: 0; 
+			padding: 3.2rem;
+		}
+
+		.megamenu img {
+			max-width: 100%;
+		}
+
+		.megamenu a {
+			color: @color-gray-19;
+			padding-bottom: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+
+		.megamenu a.active {
+			color: @color-green-06;
+		}
+
+		.megamenu .descr {
+			padding-bottom: 1.5rem;
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.4rem; 	
+		}
+		
+		.nav-item .dropdown-menu { 
+			display: none; 
+		}
+		
+		.nav-item:hover .dropdown-menu{ 
+			display: block; 
+		}
+		
+		.nav-item .dropdown-menu { 
+			margin-top: 0;
+		}
+		
+		.dropdown>.dropdown-toggle:active {
+			pointer-events: none;
+		}
+	}
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar {
+		.fixed-top .navbar-collapse, 
+		.sticky-top .navbar-collapse {
+ 		overflow-y: auto;
+      	max-height: 90vh;
+      	margin-top: 10px;
+	}
+  }
+}
+/* ============ mobile view .end// ============ */
+
+.bulky_header{
+    background: @color-beige-01;
+}
+
+.bulky_removal_form{
+    padding-top: 16.9rem;
+}
+
+.district_selection{
+    color: var(--Gray-700, #344054);
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+}
+
+.input_with_label {
+
+    p {
+        color: var(--Gray-700, #344054);
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .p-2{
+       display: flex;
+       align-items: center;
+    }
+
+    .disclaimer_contact{
+        color: var(--Gray-500, #667085);
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+   
+    .form-control{
+        display: flex;
+        // padding: 1.2rem 1.6rem !important;
+        align-items: center;
+        align-self: stretch;
+        color: var(--Gray-500, #667085);
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        border-radius: 0.8rem;
+        border: 0.1rem solid var(--Gray-300, #D0D5DD);
+        background: #ffffff;
+        box-shadow: 0 0.1rem 0.2 0 rgba(16, 24, 40, 0.05);
+
+		padding: 1.4rem 1.6rem !important;
+		max-height: none !important;
+		height: 100%;
+    }
+}
+
+.container{
+    justify-content: center;
+
+    .button_submit {
+        width: 100%;
+    
+        border-radius: 0.8rem;
+        padding: 0.8rem 1.6rem;
+    
+        color: @color-white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+    
+        background-color: @color-green-06;
+    
+        &:active {
+            background-color: @color-green-07;
+        }
+    }
+}
+
+.form-control {
+	padding: 1.4rem 1.6rem !important;
+	max-height: none !important;
+	height: 100%;
+}
+
+.radio-buttons {
+	input[type='radio'] {
+		accent-color: @color-green-07;
+	}
+}

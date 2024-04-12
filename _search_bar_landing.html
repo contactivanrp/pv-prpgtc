@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>search_bar_landing</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet/less" type="text/css" href="css/_search_bar_landing.less" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="search_bar_landing">
+			<div class="spacer"></div>
+			<div class="rounded_rectangle">
+				<div class="d-flex flex-row mb-3">
+					<div class="smile">
+						<img src="im/smile.svg" alt="Smile Icon" />
+					</div>
+					<div class="ask_me">Ask me anything</div>
+					<div class="arrow_ask">
+						<img src="im/arrow_ask.svg" alt="Smile Icon" />
+					</div>
+				</div>
+				<form class="example" action="action_page.php">
+					<input type="text" placeholder="How much is my S&CC charges?" name="search" />
+					<button type="submit" class="search_button"></button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

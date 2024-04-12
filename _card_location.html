@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>_card_location.html</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<section class="c-card-location">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="left">
+							<div class="card-content">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								<h5>Pasir Ris Office</h5>
+
+								<div class="g-para-group">
+									<p>
+										Mon-Fri 8am to 5pm.<br />
+										Sat 8am to 12:30 pm.
+									</p>
+									<p>Closed on Sundays and Public Holidays</p>
+								</div>
+
+								<div class="location">
+									Blk 577 Pasir Ris, Street 53 #01-88<br />
+									Singapore 510577
+								</div>
+							</div>
+
+							<div class="map-container">
+								<div class="iframe-container"></div>
+								<iframe id="interactive-iframe" src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6">
+						<div class="right">
+							<div class="card-content">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#5B9B7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								<h5>Punggol Office</h5>
+
+								<div class="g-para-group">
+									<p>
+										Mon-Fri 8am to 5pm.<br />
+										Sat 8am to 12:30 pm.
+									</p>
+									<p>Closed on Sundays and Public Holidays</p>
+								</div>
+
+								<div class="location">Blk 603 Punggol Road #01-01<br />Singapore 820603</div>
+							</div>
+
+							<div class="map-container">
+								<div class="iframe-container"></div>
+								<iframe id="interactive-iframe" src="https://www.google.com/maps/d/embed?mid=1P3aqUDtE8xgpc7zzXoeyG6r-VilmGFzK&ehbc=2E312F" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

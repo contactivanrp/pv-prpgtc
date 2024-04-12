@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Feedback Form</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_button_submit.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="f-form-container">
+			<form id="feedbackForm" novalidate>
+				<div class="form-field-container">
+					<!-- Remove the 'required' attribute and 'invalid-feedback' classes from the form fields -->
+					<div class="form-field-group">
+						<label for="name" class="form-label">Name*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" check="required min-8 max-100 only-text" />
+						<div class="error-message"></div>
+					</div>
+					<!-- ... -->
+					<div class="form-field-group">
+						<label for="name" class="form-label">Name*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" check="required" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="email" class="form-label">Email*</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" check="required email" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="address" class="form-label">Address*</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required address" />
+						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="phone" class="form-label">Phone number</label>
+						<div class="phone-input-container" check="tel min-max-char-8">
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<span class="phone-input-separator"></span>
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+						</div>
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="address" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required tel min-char-8 max-char-8" />
+						<div class="error-message"></div>
+						<div class="form-desc">Information provided through this form will be used solely for the purpose of facilitating the Bulky Refuse Removal service.</div>
+					</div>
+					<div class="form-field-group">
+						<label for="message" class="form-label">How can we help?*</label>
+						<textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us a little about the project..." check="required"></textarea>
+						<div class="error-message"></div>
+					</div>
+				</div>
+				<button type="submit" class="button_submit is-disabled">Submit Form</button>
+			</form>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const form = document.getElementById("feedbackForm");
+				let validationAttempted = false;
+
+				function required(value) {
+					return value.trim() !== "";
+				}
+
+				function minLength(value, limit) {
+					return value.length >= limit;
+				}
+
+				function maxLength(value, limit) {
+					return value.length <= limit;
+				}
+
+				function validateField(field) {
+					const checks = field.getAttribute("check").split(" ");
+					let isValid = true;
+					let errorMessage = "";
+
+					checks.forEach((check) => {
+						const [rule, param] = check.split("-");
+						switch (rule) {
+							case "required":
+								if (!required(field.value)) {
+									isValid = false;
+									errorMessage = "This field is required.";
+								}
+								break;
+							case "min":
+								if (!minLength(field.value, parseInt(param))) {
+									isValid = false;
+									errorMessage = `Minimum ${param} characters required.`;
+								}
+								break;
+							case "max":
+								if (!maxLength(field.value, parseInt(param))) {
+									isValid = false;
+									errorMessage = `Cannot exceed ${param} characters.`;
+								}
+								break;
+							// Add other validation rules as needed
+						}
+					});
+
+					const errorElement = field.parentElement.querySelector(".error-message");
+					if (!isValid) {
+						field.classList.add("is-invalid");
+						errorElement.textContent = errorMessage;
+					} else {
+						field.classList.remove("is-invalid");
+						errorElement.textContent = "";
+					}
+
+					return isValid;
+				}
+
+				form.addEventListener("submit", function (event) {
+					event.preventDefault();
+					validationAttempted = true; // Indicate that validation was attempted
+					let isFormValid = true;
+
+					const fields = form.querySelectorAll(".form-control");
+					fields.forEach((field) => {
+						if (!validateField(field)) {
+							isFormValid = false;
+						}
+					});
+
+					if (isFormValid) {
+						console.log("Form is valid. Ready for submission.");
+						// Form submission logic here
+					} else {
+						const firstInvalidField = form.querySelector(".is-invalid");
+						if (firstInvalidField) {
+							firstInvalidField.focus();
+						}
+					}
+				});
+
+				form.querySelectorAll(".form-control").forEach((field) => {
+					field.addEventListener("input", function () {
+						if (validationAttempted) {
+							validateField(field);
+						}
+					});
+				});
+			});
+		</script>
+
+		<!--
+
+		<script>
+			// Parse and validate based on the 'check' attribute
+			function parseAndValidateField(field) {
+				const checks = field.getAttribute("check").split(" ");
+				const value = field.value;
+				let isValid = true;
+				let errorMessage = "";
+
+				checks.forEach((check) => {
+					const [rule, param] = check.split("-");
+					switch (rule) {
+						case "required":
+							if (!required(value)) {
+								isValid = false;
+								errorMessage = "This field is required.";
+							}
+							break;
+						case "min":
+							if (!minLength(value, parseInt(param))) {
+								isValid = false;
+								errorMessage = `Please enter at least ${param} characters.`;
+							}
+							break;
+						// Additional cases for other rules...
+					}
+
+					// Set error message and class based on 'isValid'
+					const errorElement = field.parentElement.querySelector(".error-message");
+					if (!isValid) {
+						field.classList.add("is-invalid");
+						errorElement.textContent = errorMessage;
+					} else {
+						field.classList.remove("is-invalid");
+						errorElement.textContent = "";
+					}
+				});
+
+				return isValid;
+			}
+		</script>
+
+		-->
+
+		<!--
+
+		<script>
+			// Define the validation rules object
+			const validationRules = {
+				name: [{ rule: required, message: "Please enter your name." }],
+				email: [
+					{ rule: required, message: "Please enter your email address." },
+					{ rule: email, message: "Please enter a valid email address." },
+				],
+				// ... Add more validation rules for other fields
+			};
+
+			// Validation functions
+			function required(value) {
+				return value.trim() !== "";
+			}
+
+			function email(value) {
+				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				return emailRegex.test(value);
+			}
+
+			function phoneNumber(value) {
+				const phoneRegex = /^\d{8}$/;
+				return phoneRegex.test(value.replace(/\s/g, ""));
+			}
+
+			// Validate a single form field
+			function validateField(field) {
+				const rules = validationRules[field.name];
+				let isValid = true;
+				let errorMessage = "";
+
+				for (const rule of rules) {
+					if (!rule.rule(field.value)) {
+						isValid = false;
+						errorMessage = rule.message;
+						break;
+					}
+				}
+
+				const errorElement = field.parentElement.querySelector(".error-message");
+				if (!isValid) {
+					field.classList.add("is-invalid");
+					errorElement.textContent = errorMessage;
+				} else {
+					field.classList.remove("is-invalid");
+					errorElement.textContent = "";
+				}
+
+				return isValid;
+			}
+
+			// Validate all form fields
+			function validateForm() {
+				const form = document.getElementById("feedbackForm");
+				const fields = form.querySelectorAll(".form-control");
+				let isValid = true;
+
+				fields.forEach((field) => {
+					if (!validateField(field)) {
+						isValid = false;
+					}
+				});
+
+				return isValid;
+			}
+
+			// Toggle the 'is-disabled' class on the submit button
+			function toggleSubmitButton() {
+				const submitButton = document.querySelector(".button_submit");
+				if (validateForm()) {
+					submitButton.classList.remove("is-disabled");
+				} else {
+					submitButton.classList.add("is-disabled");
+				}
+			}
+
+			// Event listeners
+			document.addEventListener("DOMContentLoaded", function () {
+				const form = document.getElementById("feedbackForm");
+
+				// Validate fields on input
+				form.addEventListener("input", function (event) {
+					validateField(event.target);
+					toggleSubmitButton();
+				});
+
+				// Validate form on submit
+				form.addEventListener("submit", function (event) {
+					if (!validateForm()) {
+						event.preventDefault();
+						event.stopPropagation();
+
+						// Focus on the first invalid field
+						const invalidField = form.querySelector(".form-control.is-invalid");
+						if (invalidField) {
+							invalidField.focus();
+						}
+					}
+				});
+
+				// Auto-focus next phone input field
+				const phoneInputFields = form.querySelectorAll(".phone-input-field");
+				phoneInputFields.forEach(function (field, index) {
+					field.addEventListener("input", function () {
+						if (field.value.length === 1 && index < phoneInputFields.length - 1) {
+							phoneInputFields[index + 1].focus();
+						}
+					});
+				});
+			});
+		</script>
+
+		-->
+
+		<!--	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const form = document.getElementById("feedbackForm");
+				const submitButton = form.querySelector(".button_submit");
+				const phoneInputFields = form.querySelectorAll(".phone-input-field");
+
+				// Enable submit button when form is valid
+				form.addEventListener("input", function () {
+					if (form.checkValidity()) {
+						submitButton.classList.remove("is-disabled");
+					} else {
+						submitButton.classList.add("is-disabled");
+					}
+				});
+
+				// Validate form on submit
+				form.addEventListener("submit", function (event) {
+					if (!form.checkValidity()) {
+						event.preventDefault();
+						event.stopPropagation();
+
+						// Focus on the first invalid field
+						const invalidField = form.querySelector(".form-control:invalid");
+						if (invalidField) {
+							invalidField.focus();
+						}
+					}
+					form.classList.add("was-validated");
+				});
+
+				// Auto-focus next phone input field
+				phoneInputFields.forEach(function (field, index) {
+					field.addEventListener("input", function () {
+						if (field.value.length === 1 && index < phoneInputFields.length - 1) {
+							phoneInputFields[index + 1].focus();
+						}
+					});
+				});
+			});
+		</script> -->
+	</body>
+</html>

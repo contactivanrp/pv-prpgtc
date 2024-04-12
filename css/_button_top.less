@@ -1,0 +1,19 @@
+@import "custom.less";
+
+
+.button_top {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.2rem;
+    
+    border-radius: 0.8rem;
+    background-color: @color-green-03;
+    box-shadow: 0 0.2rem 0.4rem -0.2rem rgba(16, 24, 40, 0.2), 0 0.2rem 0.4rem -0.2rem rgba(16, 24, 40, 0.2);
+
+    &:active { // you can actually hover on the "&:active" or other elements to see the structure
+        background-color: @color-green-04;
+    }
+}

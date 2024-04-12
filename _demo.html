@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Bespoke</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_button_submit.less" />
+
+		<style>
+			.is-invalid {
+				border-color: red;
+			}
+			.error-message {
+				color: red;
+				font-size: 0.8em;
+			}
+			.form-field-group {
+				margin-bottom: 1em;
+			}
+		</style>
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="f-form-container">
+			<form id="feedbackForm" novalidate>
+				<div class="form-field-container">
+					<div class="form-field-group">
+						<label for="name" class="form-label">Name*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" check="required min-6 max-20" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="email" class="form-label">Email*</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" check="required" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="password" class="form-label">Password*</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Password" check="required min-8" />
+						<div class="error-message"></div>
+					</div>
+				</div>
+				<button type="submit" class="button_submit is-disabled">Submit Form</button>
+			</form>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			// Insert the provided JavaScript validation code here
+			document.addEventListener("DOMContentLoaded", function () {
+				const form = document.getElementById("feedbackForm");
+				const submitButton = form.querySelector(".button_submit");
+				let validationAttempted = false;
+
+				function required(value) {
+					return value.trim() !== "";
+				}
+
+				function minLength(value, limit) {
+					return value.length >= limit;
+				}
+
+				function maxLength(value, limit) {
+					return value.length <= limit;
+				}
+
+				function validateField(field) {
+					const checks = field.getAttribute("check").split(" ");
+					let isValid = true;
+					let errorMessage = "";
+
+					checks.forEach((check) => {
+						const [rule, param] = check.split("-");
+						switch (rule) {
+							case "required":
+								if (!required(field.value)) {
+									isValid = false;
+									errorMessage = "This field is required.";
+								}
+								break;
+							case "min":
+								if (!minLength(field.value, parseInt(param))) {
+									isValid = false;
+									errorMessage = `Minimum ${param} characters required.`;
+								}
+								break;
+							case "max":
+								if (!maxLength(field.value, parseInt(param))) {
+									isValid = false;
+									errorMessage = `Cannot exceed ${param} characters.`;
+								}
+								break;
+							// Add other validation rules as needed
+						}
+					});
+
+					const errorElement = field.parentElement.querySelector(".error-message");
+					if (!isValid) {
+						field.classList.add("is-invalid");
+						errorElement.textContent = errorMessage;
+					} else {
+						field.classList.remove("is-invalid");
+						errorElement.textContent = "";
+					}
+
+					return isValid;
+				}
+
+				form.addEventListener("submit", function (event) {
+					event.preventDefault();
+					validationAttempted = true; // Indicate that validation was attempted
+					let isFormValid = true;
+
+					const fields = form.querySelectorAll(".form-control");
+					fields.forEach((field) => {
+						if (!validateField(field)) {
+							isFormValid = false;
+						}
+					});
+
+					if (isFormValid) {
+						submitButton.classList.remove("is-disabled"); // Remove disabled class if valid
+						console.log("Form is valid. Ready for submission.");
+						// Form submission logic here (e.g., send data to server)
+					} else {
+						const firstInvalidField = form.querySelector(".is-invalid");
+						if (firstInvalidField) {
+							firstInvalidField.focus();
+						}
+					}
+				});
+
+				form.querySelectorAll(".form-control").forEach((field) => {
+					field.addEventListener("input", function () {
+						if (validationAttempted) {
+							validateField(field);
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

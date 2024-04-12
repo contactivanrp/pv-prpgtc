@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>index</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+		<link rel="stylesheet" href="css/_pill.css" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_megamenu.less" />
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<!-- ============= COMPONENT ============== -->
+		<div class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-content">
+						<div class="navbar-brand-logo">
+							<a class="navbar-brand" href="#">
+								<img src="im/logo.png" alt="" />
+							</a>
+						</div>
+
+						<div class="navbar-buttons">
+							<div class="top">
+								<div class="top-buttons">
+									<button type="button">
+										<img src="im/icon-crescent-moon.svg" alt="moon icon" />
+										<p class="hide-sm">Dark Mode</p>
+									</button>
+									<button type="button">
+										<img src="im/icon-italic.svg" alt="italic icon" />
+										<p class="hide-sm">Font Size</p>
+									</button>
+									<button type="button" class="error-500">
+										<img src="im/icon-phone-outgoing.svg" alt="phone outgoing icon" />
+										<p class="hide-sm">Emergency Call</p>
+									</button>
+								</div>
+							</div>
+
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="main_nav">
+								<ul class="navbar-nav">
+									<!-- ms-auto -->
+									<li class="nav-item dropdown active"><a class="nav-link" href="#">Home </a></li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our People</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row dropdown">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our News</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row dropdown">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policies</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row dropdown">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Forms</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row dropdown">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+									<li class="nav-item dropdown has-megamenu">
+										<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us</a>
+										<div class="dropdown-menu megamenu" role="menu">
+											<div class="container">
+												<div id="our-services" class="row dropdown">
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-refresh-ccw.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Service & Conservancy</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-log-out.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Bulky Refuse Removal</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-clipboard.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Facility Booking</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-users.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Handyman Services</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-sun.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Light Bulb</p>
+																<div class="badge">
+																	<p>New</p>
+																</div>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-4 button">
+														<img src="im/icon-briefcase.svg" alt="" />
+														<div>
+															<div class="header-group">
+																<p class="header">Temporary Occupation License</p>
+															</div>
+															<p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- dropdown-mega-menu.// -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- navbar-collapse.// -->
+				</div>
+			</div>
+
+			<!-- container-fluid.// -->
+		</nav>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

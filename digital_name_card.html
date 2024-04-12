@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Digital Name Card</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_portrait_image.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="c-digital-name-card">
+							<div class="card-col-start">
+								<img src="im/logo.png" alt="" class="logo-img" />
+								<div class="content-group table-responsive">
+									<div class="heading-group">
+										<h5>Mr James Tan</h5>
+										<h6>PR Manager of Pasir Ris Branch</h6>
+									</div>
+
+									<table class="table table-borderless">
+										<tbody>
+											<tr class="tr-start">
+												<th>
+													<div class="th-group">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<path d="M13.75 3.75C13.75 3.0625 13.1875 2.5 12.5 2.5H2.5C1.8125 2.5 1.25 3.0625 1.25 3.75M13.75 3.75V11.25C13.75 11.9375 13.1875 12.5 12.5 12.5H2.5C1.8125 12.5 1.25 11.9375 1.25 11.25V3.75M13.75 3.75L7.5 8.125L1.25 3.75" stroke="#98A2B3" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+														</svg>
+														<div class="th-content">Email</div>
+													</div>
+												</th>
+												<td>tmubest@yahoo.com.sg</td>
+											</tr>
+											<tr>
+												<th>
+													<div class="th-group">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<g clip-path="url(#clip0_9_24341)">
+																<path d="M13.125 6.25C13.125 10.625 7.5 14.375 7.5 14.375C7.5 14.375 1.875 10.625 1.875 6.25C1.875 4.75816 2.46763 3.32742 3.52252 2.27252C4.57742 1.21763 6.00816 0.625 7.5 0.625C8.99184 0.625 10.4226 1.21763 11.4775 2.27252C12.5324 3.32742 13.125 4.75816 13.125 6.25Z" stroke="#98A2B3" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+																<path d="M7.5 8.125C8.53553 8.125 9.375 7.28553 9.375 6.25C9.375 5.21447 8.53553 4.375 7.5 4.375C6.46447 4.375 5.625 5.21447 5.625 6.25C5.625 7.28553 6.46447 8.125 7.5 8.125Z" stroke="#98A2B3" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+															</g>
+															<defs>
+																<clipPath id="clip0_9_24341">
+																	<rect width="15" height="15" fill="white" />
+																</clipPath>
+															</defs>
+														</svg>
+														<div class="th-content">Address</div>
+													</div>
+												</th>
+												<td>Blk 577 Pasir Ris Street 53 #01-88 Singapore 510577</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="card-col-end">
+								<img src="im/im-committee-member-01.png" alt="" class="profile-image" />
+								<img src="im/qr-code-placeholder.png" alt="" class="qr-code-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

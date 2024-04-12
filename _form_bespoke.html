@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Feedback Form</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_button_submit.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="f-form-container">
+			<form id="feedbackForm" novalidate>
+				<div class="form-field-container">
+					<div class="form-field-group">
+						<label for="name" class="form-label">Name*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" data-check="required min-8 max-100 only-text" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="email" class="form-label">Email*</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" data-check="required email" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="address" class="form-label">Address*</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." data-check="required address" />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="phone" class="form-label">Phone number</label>
+						<div class="phone-input-container" data-check="tel min-max-char-8">
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<span class="phone-input-separator"></span>
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+							<input type="tel" class="form-control phone-input-field" maxlength="1" />
+						</div>
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="contact" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="contact" name="contact" placeholder="Contact number" data-check="required tel min-char-8 max-char-8" />
+						<div class="error-message"></div>
+						<div class="form-desc">Information provided through this form will be used solely for the purpose of facilitating the Bulky Refuse Removal service.</div>
+					</div>
+					<div class="form-field-group">
+						<label for="message" class="form-label">How can we help?*</label>
+						<textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us a little about the project..." data-check="required"></textarea>
+						<div class="error-message"></div>
+					</div>
+				</div>
+				<button type="submit" class="button_submit is-disabled">Submit Form</button>
+			</form>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			// Get the form element
+			const form = document.getElementById("feedbackForm");
+
+			// Get all the form fields with the 'data-check' attribute
+			const formFields = form.querySelectorAll("[data-check]");
+
+			// Function to validate a form field
+			function validateField(field) {
+				const rules = field.getAttribute("data-check").split(" ");
+				const errorMessage = field.nextElementSibling;
+				let isValid = true;
+
+				// Clear previous error message
+				errorMessage.textContent = "";
+
+				// Check each validation rule
+				rules.forEach((rule) => {
+					switch (rule) {
+						case "required":
+							if (!field.value.trim()) {
+								isValid = false;
+								errorMessage.textContent = "This field is required.";
+							}
+							break;
+						case "email":
+							if (!/\S+@\S+\.\S+/.test(field.value)) {
+								isValid = false;
+								errorMessage.textContent = "Please enter a valid email address.";
+							}
+							break;
+						case "tel":
+							if (!/^\d+$/.test(field.value)) {
+								isValid = false;
+								errorMessage.textContent = "Please enter only digits.";
+							}
+							break;
+						case "min-8":
+							if (field.value.length < 8) {
+								isValid = false;
+								errorMessage.textContent = "Minimum 8 characters required.";
+							}
+							break;
+						case "max-100":
+							if (field.value.length > 100) {
+								isValid = false;
+								errorMessage.textContent = "Maximum 100 characters allowed.";
+							}
+							break;
+						case "only-text":
+							if (!/^[a-zA-Z\s]+$/.test(field.value)) {
+								isValid = false;
+								errorMessage.textContent = "Only letters and spaces allowed.";
+							}
+							break;
+						case "min-char-8":
+							if (field.value.length < 8) {
+								isValid = false;
+								errorMessage.textContent = "Minimum 8 characters required.";
+							}
+							break;
+						case "max-char-8":
+							if (field.value.length > 8) {
+								isValid = false;
+								errorMessage.textContent = "Maximum 8 characters allowed.";
+							}
+							break;
+						// Add more validation rules as needed
+					}
+				});
+
+				// Toggle the 'is-invalid' class based on the validation result
+				field.classList.toggle("is-invalid", !isValid);
+
+				return isValid;
+			}
+
+			// Function to validate all form fields
+			function validateForm() {
+				let isFormValid = true;
+
+				formFields.forEach((field) => {
+					if (!validateField(field)) {
+						isFormValid = false;
+					}
+				});
+
+				return isFormValid;
+			}
+
+			// Event listener for form submission
+			form.addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				if (validateForm()) {
+					// All fields are valid, submit the form
+					form.submit();
+				} else {
+					// Highlight errors and disable the submit button
+					formFields.forEach((field) => {
+						validateField(field);
+					});
+					submitButton.classList.add("is-disabled");
+				}
+			});
+
+			// Event listener for form field changes
+			formFields.forEach((field) => {
+				field.addEventListener("input", function () {
+					validateField(this);
+
+					// Check if all fields are valid and enable/disable the submit button
+					const isFormValid = validateForm();
+					submitButton.classList.toggle("is-disabled", !isFormValid);
+				});
+			});
+
+			// Get the submit button
+			const submitButton = form.querySelector(".button_submit");
+
+			// Event listener for submit button click
+			submitButton.addEventListener("click", function () {
+				if (submitButton.classList.contains("is-disabled")) {
+					// Highlight errors when the submit button is clicked and is disabled
+					formFields.forEach((field) => {
+						validateField(field);
+					});
+				}
+			});
+		</script>
+	</body>
+</html>
