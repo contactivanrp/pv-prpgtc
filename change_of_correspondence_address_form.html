@@ -34,55 +34,90 @@
 		<div class="f-form-container">
 			<form id="feedbackForm" novalidate>
 				<div class="form-field-container">
-					<!-- Remove the 'required' attribute and 'invalid-feedback' classes from the form fields -->
+					<h5>1st Registered Lessee</h5>
+
 					<div class="form-field-group">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" check="required min-8 max-100 only-text" />
+						<input type="text" class="form-control" id="name" name="name" placeholder="1st Registered Lessee" check="required" />
 						<div class="error-message"></div>
 					</div>
-					<!-- ... -->
+
 					<div class="form-field-group">
-						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" check="required" />
+						<label for="name" class="form-label">Partial NRIC No.</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Last 3 digits & last alphabet." check="required" />
 						<div class="error-message"></div>
 					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Contact No." check="required tel" />
+						<div class="error-message"></div>
+						<div class="form-desc">Information provided through this form will be used solely for the purpose of facilitating the Bulky Refuse Removal service.</div>
+					</div>
+
 					<div class="form-field-group">
 						<label for="email" class="form-label">Email</label>
 						<input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" check="required email" />
 						<div class="error-message"></div>
 					</div>
+
+					<h5>2nd Registered Lessee</h5>
+
 					<div class="form-field-group">
-						<label for="address" class="form-label">Address</label>
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="1st Registered Lessee" check="required" />
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="name" class="form-label">Partial NRIC No.</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Last 3 digits & last alphabet." check="required" />
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Contact No." check="required tel" />
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="email" class="form-label">Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" check="required email" />
+						<div class="error-message"></div>
+					</div>
+
+					<h5>Property Information</h5>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Property Address</label>
 						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required address" />
 						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
 						<div class="error-message"></div>
 					</div>
+
 					<div class="form-field-group">
-						<label for="phone" class="form-label">Phone number</label>
-						<div class="phone-input-container" check="tel min-max-char-8">
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<span class="phone-input-separator"></span>
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-							<input type="tel" class="form-control phone-input-field" maxlength="1" />
-						</div>
+						<label for="address" class="form-label">Postal Code</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required address" />
+						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
 						<div class="error-message"></div>
 					</div>
+
 					<div class="form-field-group">
-						<label for="address" class="form-label">Contact No.</label>
-						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check=" tel " />
-						<div class="error-message"></div>
-						<div class="form-desc">Information provided through this form will be used solely for the purpose of facilitating the Bulky Refuse Removal service.</div>
-					</div>
-					<div class="form-field-group">
-						<label for="message" class="form-label">How can we help?</label>
-						<textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us a little about the project..." check="required"></textarea>
+						<label for="address" class="form-label">Correspondence Address</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required address" />
+						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
 						<div class="error-message"></div>
 					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Postal Code</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check="required address" />
+						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
+						<div class="error-message"></div>
+					</div>
+
+					<div class="text-desc"><span class="highlight">Note:</span> The information in this form shall supersede all relevant information in the Town Council's records. The Town Council reserves the right to reject any incomplete information in this form.</div>
 				</div>
 				<button type="submit" class="button_submit is-disabled">Submit Form</button>
 			</form>

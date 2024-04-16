@@ -3606,6 +3606,101 @@ footer {
     }
 }
 
+.c-alert-bar {
+    .main-bar {
+        position: relative;
+        /* ensure z-index is effective */
+        z-index: 100000;
+        /* above the normal content but below the modal */
+
+        width: 100%;
+        padding: 0.8rem 1.4rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: @color-white;
+        background-color: @color-green-07;
+
+        .main-text {
+            transition: opacity 0.5s ease;
+            /* Smooth transition for the dimming effect */
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+
+            text-wrap: nowrap;
+            overflow: scroll;
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        
+            /* Hide scrollbar for IE, Edge and Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+
+            .text-header {
+                padding-right: 0.4rem;
+            }
+
+            .cta-text {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 0.4rem;
+
+                padding-left: 0.8rem;
+            }
+
+            svg {
+                fill: @color-white;
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+    }
+
+    .dimmed {
+        opacity: 0.7;
+        /* Reduces the opacity to create a dimming effect */
+    }
+
+    .modal {
+        position: absolute;
+        /* ensure z-index is effective */
+        z-index: 100000;
+        /* above the normal content but below the modal */
+    }
+
+    .modal-dialog {
+        @media (max-width: calc(@sm - 1px)) {
+            margin: 2.4rem;
+        }
+    }
+
+    .modal-content {
+        border-radius: 0.8rem;
+        overflow: hidden !important;
+
+        button {
+            &:focus {
+                --bs-btn-close-focus-shadow: none;
+            }
+        }
+    }
+}
+
 .c-files-download {
 
     border-radius: 0.8rem;
@@ -4677,6 +4772,19 @@ footer {
     .phone-input-separator::after {
         content: '';
     }
+
+    .text-desc {
+        width: 100%;
+        margin-top: 0.8rem;
+    
+        color: @color-gray-19;
+    
+        /* Text sm/Regular */
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        /* 142.857% */
+    }
 }
 
 .f-form-container {
@@ -4743,7 +4851,7 @@ footer {
             background: @color-white;
 
             /* Shadow/xs */
-            box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+            box-shadow: 0 0.1rem 0.2rem 0 #1018280d;
 
             &::placeholder {
                 color: @color-gray-12;
@@ -4762,7 +4870,7 @@ footer {
 
             &.is-invalid {
                 border: 0.1rem solid @color-red-03;
-                box-shadow: 0 0.1rem 0.2rem 0 rgba(16, 24, 40, 0.05);
+                box-shadow: 0 0.1rem 0.2rem 0 #1018280d;
             
                 &:focus,
                 &:active {
@@ -4785,25 +4893,68 @@ footer {
             line-height: 2rem;
             /* 142.857% */
         }
+
+        .error-message {
+            width: 100%;
+            margin-top: 0.8rem;
+        
+            color: @color-red-02;
+        
+            /* Text sm/Regular */
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2rem;
+            /* 142.857% */
+        }
+
+        .required-tag {
+            color: @color-red-02;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2rem;
+            /* 142.857% */
+        
+            margin-bottom: 0.6rem;
+        }
     }
 
-    .phone-input-container {
+    .input-group {
         display: flex;
         align-items: center;
+        
+        .form-control {
+            width: 30px;
+            margin-right: 1rem;
+            text-align: center;
+            
+            border-radius: 0.8rem !important;
+        
+            &:last-child {
+                margin-right: 0rem;
+            }
+        }
     }
 
-    .phone-input-field {
-        width: 30px;
+    .input-separator::after {
+        content: '-';
         margin-right: 1rem;
-        text-align: center;
     }
 
-    .phone-input-separator {
-        margin-right: 0rem;
-    }
+    .text-desc {
+        padding: 1.2rem 1.6rem;
+        width: 100%;
 
-    .phone-input-separator::after {
-        content: '';
+        color: @color-gray-19;
+
+        /* Text sm/Regular */
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        /* 142.857% */
+    
+        .highlight {
+            font-weight: 600;
+        }
     }
 }
 

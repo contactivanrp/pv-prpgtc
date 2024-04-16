@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alert Bar</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_button_submit.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="c-alert-bar">
+			<button class="main-bar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<div class="main-text">
+					<div class="text-header">Notice:</div>
+					Punggol Town Council Office (Block 603 Punggol Road) is temporarily closed until further notice.
+					<div class="cta-text">
+						Learn Why
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256">
+							<path d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"></path>
+						</svg>
+					</div>
+				</div>
+			</button>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<img src="im/notice_temporary_punggol_office_closure.jpeg" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Feedback Form</title>
+		<link rel="icon" type="image/png" href="im/logo.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap" />
+		<link rel="stylesheet/less" type="text/css" href="css/custom.less" />
+
+		<!-- start of additional styling -->
+
+		<link rel="stylesheet/less" href="css/_navbar.less" type="text/css" />
+		<link rel="stylesheet/less" href="css/_page_header.less" type="text/css" />
+		<link rel="stylesheet/less" type="text/css" href="css/_button_submit.less" />
+
+		<!-- end of additional styling -->
+
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+			less = { env: "development" };
+		</script>
+		<script src="less.js"></script>
+		<script>
+			less.watch();
+		</script>
+	</head>
+
+	<body>
+		<div class="f-form-container">
+			<form id="feedbackForm" novalidate>
+				<div class="form-field-container">
+					<!-- Remove the 'required' attribute and 'invalid-feedback' classes from the form fields -->
+					<div class="form-field-group">
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name" check="required" />
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="email" class="form-label">Address</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="Address" check="required email" />
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="phone" class="form-label">Unit No.</label>
+						<div class="input-group" check="required">
+							<input type="tel" class="form-control" check="required" />
+							<span class="input-separator"></span>
+							<input type="tel" class="form-control" check="required max-3" />
+						</div>
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Contact No." check="required tel" />
+						<div class="error-message"></div>
+						<div class="form-desc">Information provided through this form will be used solely for the purpose of facilitating the Bulky Refuse Removal service.</div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Date</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="dd/mm/yyyy" check="required date" />
+						<!-- To modify to ask for singapore postal code, blk, rd, unit etc -->
+						<div class="error-message"></div>
+					</div>
+
+					<div class="form-field-group">
+						<label for="address" class="form-label">Contact No.</label>
+						<input type="text" class="form-control" id="address" name="address" placeholder="Block and street. Unit number (optional)." check=" tel " />
+						<div class="error-message"></div>
+					</div>
+					<div class="form-field-group">
+						<label for="message" class="form-label">How can we help?</label>
+						<textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us a little about the project..." check="required"></textarea>
+						<div class="error-message"></div>
+					</div>
+				</div>
+				<button type="submit" class="button_submit is-disabled">Submit Form</button>
+			</form>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const form = document.getElementById("feedbackForm");
+				const submitButton = document.querySelector(".button_submit");
+				let isSubmitAttempted = false; // Flag to check if submit has been attempted
+
+				document.querySelectorAll('input[check*="required"], textarea[check*="required"]').forEach((field) => {
+					const label = field.parentElement.querySelector("label");
+					if (label) {
+						label.innerHTML += '<span class="required-tag"> *</span>';
+					}
+				});
+
+				const inputs = document.querySelectorAll("input, textarea");
+				inputs.forEach((input, index) => {
+					input.addEventListener("keydown", function (event) {
+						if (event.key === "Enter") {
+							if (input.tagName.toLowerCase() === "textarea") {
+								// Allow the Enter key to function normally in textareas
+								return;
+							}
+							event.preventDefault(); // Prevent form submission on Enter key for input fields
+
+							// Move focus to the next input field if it exists
+							const nextInput = inputs[index + 1];
+							if (nextInput) {
+								nextInput.focus();
+							}
+						}
+					});
+				});
+
+				function required(value) {
+					return value.trim() !== "";
+				}
+				function minLength(value, limit) {
+					return value.length >= limit;
+				}
+				function maxLength(value, limit) {
+					return value.length <= limit;
+				}
+				function onlyText(value) {
+					return /^[a-zA-Z\s]+$/.test(value);
+				}
+				function email(value) {
+					return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+				}
+				function address(value) {
+					return /^[a-zA-Z0-9\s.,#-]+$/.test(value);
+				}
+				function tel(value) {
+					return /^\d{8}$/.test(value.replace(/\s/g, ""));
+				}
+				function date(value) {
+					const dateRegex = /^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[012])\/(19|20)\d{2}$/;
+					if (!dateRegex.test(value)) return false;
+
+					const [day, month, year] = value.split("/").map(Number);
+					const dateObj = new Date(year, month - 1, day);
+					return dateObj.getFullYear() === year && dateObj.getMonth() === month - 1 && dateObj.getDate() === day;
+				}
+
+				function validateField(field) {
+					const checkAttr = field.getAttribute("check");
+					if (!checkAttr) {
+						return true; // Skip validation if no 'check' attribute
+					}
+
+					if (field.classList.contains("input-group")) {
+						const subFields = field.querySelectorAll(".form-control");
+						let isValid = true;
+						let groupErrorMessage = "";
+
+						subFields.forEach((subField) => {
+							const subFieldValid = validateField(subField);
+							isValid = isValid && subFieldValid; // Combine validity of all subfields
+
+							if (!subFieldValid) {
+								const errorMessage = subField.getAttribute("error-message") || "Invalid input";
+								groupErrorMessage = errorMessage; // Take last error message if multiple
+							}
+						});
+
+						const errorElement = field.closest(".form-field-group").querySelector(".error-message");
+						if (!isValid) {
+							errorElement.textContent = groupErrorMessage;
+							subFields.forEach((subField) => subField.classList.add("is-invalid"));
+						} else {
+							errorElement.textContent = "";
+							subFields.forEach((subField) => subField.classList.remove("is-invalid"));
+						}
+
+						return isValid;
+					} else {
+						// Extract individual checks from checkAttr
+						const checks = checkAttr.split(" ");
+
+						let isValid = true;
+						let errorMessage = "";
+
+						// Check for 'required' first and prioritize it
+						if (checks.includes("required") && !required(field.value)) {
+							isValid = false;
+							errorMessage = "This field is required.";
+						} else if (field.value.trim() === "") {
+							// If the field is not required and empty, it's valid, clear any errors
+							field.classList.remove("is-invalid");
+							const errorElement = field.closest(".form-field-group").querySelector(".error-message");
+							if (errorElement) {
+								errorElement.textContent = "";
+							}
+							return true; // If the field is not required and empty, it's valid
+						} else {
+							// Perform other validations if the field is not empty or not just required
+							checks.forEach((check) => {
+								const [rule, param] = check.split("-");
+								if (!isValid) return; // If already invalid, skip further checks
+
+								switch (rule) {
+									case "min":
+										isValid = minLength(field.value, parseInt(param));
+										errorMessage = `Minimum ${param} characters required.`;
+										break;
+									case "max":
+										isValid = maxLength(field.value, parseInt(param));
+										errorMessage = `Cannot exceed ${param} characters.`;
+										break;
+									case "only":
+										if (param === "text") {
+											isValid = onlyText(field.value);
+											errorMessage = "Only text characters are allowed.";
+										}
+										break;
+									case "email":
+										isValid = email(field.value);
+										errorMessage = "Invalid email address.";
+										break;
+									case "address":
+										isValid = address(field.value);
+										errorMessage = "Invalid address format.";
+										break;
+									case "tel":
+										isValid = tel(field.value);
+										errorMessage = "Invalid phone number format.";
+										break;
+									case "date":
+										isValid = date(field.value);
+										errorMessage = "Invalid date format. Please use dd/mm/yyyy.";
+										break;
+								}
+							});
+						}
+
+						const errorElement = field.closest(".form-field-group").querySelector(".error-message");
+						if (!isValid && isSubmitAttempted) {
+							field.classList.add("is-invalid");
+							if (errorElement) {
+								errorElement.textContent = errorMessage;
+							}
+						} else {
+							field.classList.remove("is-invalid");
+							if (errorElement) {
+								// Logging more detailed information about the error message being cleared
+								console.log(`Error message cleared for ${field.id || field.name}: ${errorElement.textContent}`);
+								errorElement.textContent = "";
+							}
+						}
+						return isValid;
+					}
+				}
+
+				function validateForm() {
+					let isFormValid = true;
+					form.querySelectorAll(".form-control, .input-group").forEach((field) => {
+						if (!validateField(field)) {
+							isFormValid = false;
+						}
+					});
+
+					// Update submit button class based on form validity
+					submitButton.classList.toggle("is-disabled", !isFormValid);
+
+					if (isFormValid && !isSubmitAttempted) {
+						// Set the flag when form validation passes without errors
+						isSubmitAttempted = true;
+					}
+
+					return isFormValid;
+				}
+
+				form.querySelectorAll(".form-control, .input-group").forEach((field) => {
+					field.addEventListener("input", function () {
+						validateField(field);
+						validateForm();
+					});
+				});
+
+				// Event listener for input change on form fields within the input group
+				form.querySelectorAll(".input-group .form-control").forEach((field) => {
+					field.addEventListener("input", function () {
+						validateField(field.closest(".input-group"));
+						validateForm();
+					});
+				});
+
+				form.addEventListener("submit", function (event) {
+					isSubmitAttempted = true; // Set flag on first submit attempt
+
+					if (!validateForm()) {
+						event.preventDefault();
+
+						const firstInvalidField = form.querySelector(".is-invalid");
+						if (firstInvalidField) {
+							firstInvalidField.focus();
+						}
+					} else {
+						// Form is valid, perform submission logic here
+						console.log("Form submitted successfully!");
+					}
+				});
+
+				// Perform a silent validation on load to set initial state of the submit button
+				validateForm();
+			});
+		</script>
+	</body>
+</html>
